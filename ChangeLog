@@ -1,0 +1,4557 @@
+commit 5f4d6864ecd25fc98184f589f3169aafbfa065b0
+Author: Lionel Landwerlin <lionel.g.landwerlin@linux.intel.com>
+Date:   Thu Feb 17 18:16:56 2011 +0000
+
+    Refresh tweet dates every 10 minutes
+    
+    https://bugs.meego.com/show_bug.cgi?id=8834
+
+ src/mps-tweet-card.c  |   61 +++++++++++++++++++++++++++++-------------------
+ src/mps-tweet-card.h  |    1 +
+ src/mps-view-bridge.c |   35 +++++++++++++++++++++++++++-
+ 3 files changed, 72 insertions(+), 25 deletions(-)
+
+commit 251d3d9445ae4aa8e94aec44dadabf1044c92889
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Feb 11 20:40:15 2011 +0000
+
+    Post-release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 46b860ee166b3b668addd873191ec66fb7bb8866
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Feb 11 20:39:14 2011 +0000
+
+    build: Switch to use clutter-gtk 0.12
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 02ca2443b9feb0ee814f13f3e14485ccd1f6fe99
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 10 00:11:30 2011 +0000
+
+    sw-online: Synchronise with latest version from libsocialweb
+    
+    Fixes: https://bugs.meego.com/show_bug.cgi?id=13387
+
+ src/sw-online.c |   78 +++++++++++++++---------------------------------------
+ 1 files changed, 22 insertions(+), 56 deletions(-)
+
+commit 25463ac5024b6da7f1bd115759ee60c3a1aba4b7
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Dec 28 15:31:20 2010 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit ff14d5d019397928a65c7e98c4d0e663d3af5006
+Author: Marko Vertainen <marko.vertainen@iki.fi>
+Date:   Thu Nov 18 15:02:20 2010 +0000
+
+    l10n: Updated Finnish (fi) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/fi.po |   42 ++++++++++++++----------------------------
+ 1 files changed, 14 insertions(+), 28 deletions(-)
+
+commit 165e4db50cd74f340027b48191604d7c1a051309
+Author: Ignat Kizenko <darkfoton@ukr.net>
+Date:   Tue Nov 16 22:44:34 2010 +0000
+
+    l10n: Updated Ukrainian (uk) translation to 83%
+    
+    New status: 20 messages complete with 4 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/uk.po |  203 +++++++++++++++++++++++++++++++++++++++++++-------------------
+ 1 files changed, 141 insertions(+), 62 deletions(-)
+
+commit 216759a4f2944a8be6109857c9eecc76527009e6
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Nov 15 09:22:14 2010 +0000
+
+    geotag-pane: Update the button callback to use the toggled notification
+    
+    Fixes: http://bugs.meego.com/show_bug.cgi?id=10038
+
+ src/mps-geotag-pane.c |   10 +++++-----
+ 1 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 1a6d4fb32d318e790e4e2f0e6190f8252aba076d
+Author: Iñigo Varela <ivarela@softastur.org>
+Date:   Sat Nov 13 15:34:20 2010 +0000
+
+    l10n: Updated Asturian (ast) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ast.po |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 3312fe73ab7499188a86c64fe2653b2f130ae26a
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Nov 12 13:37:27 2010 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit d19109d670cbb271d221521e7a131ade9cf34643
+Author: Martine <martine.landais@intel.com>
+Date:   Thu Nov 11 16:41:00 2010 +0000
+
+    l10n: Updated French (fr) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/fr.po |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 4833ec635723cb752f16f5ac203a4e2284bbe898
+Author: Sérgio Marques <smarquespt@gmail.com>
+Date:   Tue Nov 9 15:46:13 2010 +0000
+
+    l10n: Updated Portuguese (pt) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/pt.po |   12 +++++-------
+ 1 files changed, 5 insertions(+), 7 deletions(-)
+
+commit 7e15c4c6534f6e819311a449480e31e5adb92d2c
+Author: Cheng-Chia Tseng <pswo10680@gmail.com>
+Date:   Tue Nov 9 08:40:20 2010 +0000
+
+    l10n: Updated Chinese (Taiwan) (zh_TW) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/zh_TW.po |   22 ++++------------------
+ 1 files changed, 4 insertions(+), 18 deletions(-)
+
+commit a202c949ff7ee386e2b97579b594e4f053e153fd
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Nov 8 13:30:06 2010 +0000
+
+    build: Change private library so that it works with MeeGo's automake
+
+ src/Makefile.am |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit f443fcc1807a4c7e2675fd05ea0a00b39b60b7f4
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Nov 8 11:17:33 2010 +0000
+
+    feed-pane: Use new new authorid field rather than screen_name
+    
+    Fixes: http://bugs.meego.com/show_bug.cgi?id=9559
+
+ src/mps-feed-pane.c |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 3b259e91609723915d00896ae38c2262dfafbf9e
+Author: mbouzada <mbouzada@gmail.com>
+Date:   Sun Nov 7 11:28:07 2010 +0000
+
+    l10n: Updated Galician (gl) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/gl.po |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit f0e6a854211a7ddbf6894f9faeaa960272e385b6
+Author: mbouzada <mbouzada@gmail.com>
+Date:   Sun Nov 7 11:25:32 2010 +0000
+
+    l10n: Updated Galician (gl) translation to 95%
+    
+    New status: 23 messages complete with 1 fuzzy and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/gl.po |   66 +++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 34 insertions(+), 32 deletions(-)
+
+commit 820c2d3ffa17a2c1e32495be6cf2bdf4285fd761
+Author: Marcin Sołtysiak <marcin.p.soltysiak@gmail.com>
+Date:   Wed Nov 3 14:33:06 2010 +0000
+
+    l10n: Updated Polish (pl) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/pl.po |   14 +++++++-------
+ 1 files changed, 7 insertions(+), 7 deletions(-)
+
+commit 494db6d7900d7e21ef5a52196bf010fc8deb733e
+Author: Jean Cayron <jean.cayron@gmail.com>
+Date:   Wed Nov 3 11:17:45 2010 +0000
+
+    l10n: Updated Walloon (wa) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/wa.po |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit abdb630149b7f27cdaf88bfef0e79bd66e25629b
+Author: fri <pavelfric@seznam.cz>
+Date:   Wed Nov 3 08:43:47 2010 +0000
+
+    l10n: Updated Czech (cs) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/cs.po |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 9cc8b7755a7fd585dfa67adce707645ac674a7b9
+Author: Andika Triwidada <andika@gmail.com>
+Date:   Wed Nov 3 05:15:55 2010 +0000
+
+    l10n: Updated Indonesian (id) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/id.po |   63 ++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 33 insertions(+), 30 deletions(-)
+
+commit ab241ce764285ed9bbc809e15c7ab591fbc5680b
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Nov 2 15:55:01 2010 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 928f5bd6d06bec4254a536897f5a6e6daca91930
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Nov 2 15:52:37 2010 +0000
+
+    Post-branch version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 6f955eaa55aa7e682c28a9822feb193e44c3efd8
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Nov 2 15:50:38 2010 +0000
+
+    feed-pane: Fix typo in geotag message
+    
+    Fixes: http://bugs.meego.com/show_bug.cgi?id=9612
+
+ src/mps-feed-pane.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit f6b11c7c427c32a5dca5018e96efb79e08c97089
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Nov 2 15:49:34 2010 +0000
+
+    build: Bump libchamplain requirement
+    
+    Fixes: http://bugs.meego.com/show_bug.cgi?id=9560
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 777371f7bae723d937d3935e13fdf30cc752ed75
+Author: Jean Cayron <jean.cayron@gmail.com>
+Date:   Thu Oct 28 11:20:57 2010 +0000
+
+    l10n: Updated Walloon (wa) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/wa.po |   63 ++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 33 insertions(+), 30 deletions(-)
+
+commit 7c0c230a317efbebe2e326d3f9901581b36ca90d
+Author: Sérgio Marques <smarquespt@gmail.com>
+Date:   Thu Oct 28 09:45:14 2010 +0000
+
+    l10n: Added Portuguese locale
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/pt.po |  130 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 130 insertions(+), 0 deletions(-)
+
+commit 355e093600e5bc50f8cf8f27943c4cf3b486c03c
+Author: Iñigo Varela <ivarela@softastur.org>
+Date:   Tue Oct 26 13:14:25 2010 +0000
+
+    l10n: Updated Asturian (ast) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ast.po |   63 ++++++++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 36 insertions(+), 27 deletions(-)
+
+commit d4d512122413478a3ba792544df9bbea93b09dc2
+Author: A S Alam <apreet.alam@gmail.com>
+Date:   Fri Oct 22 02:02:39 2010 +0000
+
+    l10n: Updated Panjabi (Punjabi) (pa) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/pa.po |   87 ++++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 45 insertions(+), 42 deletions(-)
+
+commit fa166ea4c47dd68717e24d8faaec41d4c0ad37b7
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Oct 21 11:26:19 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 331d6d625e549a3565808eac43aefddf4459c1e5
+Author: fri <pavelfric@seznam.cz>
+Date:   Wed Oct 20 22:56:10 2010 +0000
+
+    l10n: Updated Czech (cs) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/cs.po |  112 ++++++++++++++++++++++++-------------------------------------
+ 1 files changed, 44 insertions(+), 68 deletions(-)
+
+commit 921aebf8fd8cbc23fc5ae68c39a85e0b9e6eb767
+Author: GLS_FIN <annax.bergman@intel.com>
+Date:   Wed Oct 20 22:17:29 2010 +0000
+
+    l10n: Updated Finnish (fi) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/fi.po |   91 ++++++++++++++++++++++++++++++++++++-------------------------
+ 1 files changed, 54 insertions(+), 37 deletions(-)
+
+commit 8f360645f8ed232d991ba518172c15c0cc781778
+Author: gls_esn1 <pablo24uk@yahoo.com>
+Date:   Wed Oct 20 21:48:17 2010 +0000
+
+    l10n: Updated Spanish (Castilian) (es) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/es.po |   76 ++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 40 insertions(+), 36 deletions(-)
+
+commit 06aa7212a671e20fb47ce84197212335e17b054d
+Author: Clara Steiner-Jay <csteiner@aracnet.com>
+Date:   Wed Oct 20 18:33:51 2010 +0000
+
+    l10n: Updated German (de) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/de.po |   80 +++++++++++++++++++++++++++++--------------------------------
+ 1 files changed, 38 insertions(+), 42 deletions(-)
+
+commit 0d6988136fae1541e98ce804eafa4da2b11a5fac
+Author: Margie Foster <margie@linux.intel.com>
+Date:   Wed Oct 20 17:17:20 2010 +0000
+
+    l10n: Updated English (United Kingdom) (en_GB) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/en_GB.po |   72 +++++++++++++++++++++++++++++++++-------------------------
+ 1 files changed, 41 insertions(+), 31 deletions(-)
+
+commit 95652951eefe31a067d26b989a1f75315f595ee6
+Author: GLS_KOR <sunx.kim@intel.com>
+Date:   Wed Oct 20 16:19:23 2010 +0000
+
+    l10n: Updated Korean (ko) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ko.po |   84 +++++++++++++++++++++++++++++++++++++++-----------------------
+ 1 files changed, 53 insertions(+), 31 deletions(-)
+
+commit fd3e8630ab2d26c58f25b9981fcadea28f9986d1
+Author: GLS_NLD2 <helen.martin@ptiglobal.net>
+Date:   Wed Oct 20 05:17:59 2010 +0000
+
+    l10n: Updated Dutch (Netherlands) (nl) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/nl.po |  111 ++++++++++++++++++++++++++++++++++++-------------------------
+ 1 files changed, 65 insertions(+), 46 deletions(-)
+
+commit 8588f01a49efb7ce1aef7e74473ae1e909cb8b03
+Author: Wen-Hsin Moh <wenhsinm@gmail.com>
+Date:   Wed Oct 20 04:04:32 2010 +0000
+
+    l10n: Updated Chinese (Taiwan) (zh_TW) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/zh_TW.po |   78 ++++++++++++++++++++++++++++++++++------------------------
+ 1 files changed, 46 insertions(+), 32 deletions(-)
+
+commit 2826b4a64446a0adaca9fd8fef800b8b9746bb23
+Author: GLS_RUS <bogdan.nosach@ptiglobal.net>
+Date:   Wed Oct 20 02:59:38 2010 +0000
+
+    l10n: Updated Russian (ru) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ru.po |   83 ++++++++++++++++++++++++++++++++++++-------------------------
+ 1 files changed, 49 insertions(+), 34 deletions(-)
+
+commit b978e89a055fb8d2aceae833d7e83a636074b88d
+Author: GLS_ITA1 <francescax.godani.muzi@intel.com>
+Date:   Wed Oct 20 02:25:47 2010 +0000
+
+    l10n: Updated Italian (it) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/it.po |   64 +++++++++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 37 insertions(+), 27 deletions(-)
+
+commit 42e8c6f48c2f56f0f4d361c0bd19cca487971465
+Author: GLS_SVE1 <petrax.m.klein@intel.com>
+Date:   Wed Oct 20 01:39:35 2010 +0000
+
+    l10n: Updated Swedish (sv) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/sv.po |   66 +++++++++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 38 insertions(+), 28 deletions(-)
+
+commit e08a486cc5f6881dfa67337816d442020e77cd08
+Author: Clara Steiner-Jay <csteiner@aracnet.com>
+Date:   Wed Oct 20 00:02:37 2010 +0000
+
+    l10n: Updated French (fr) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/fr.po |   87 +++++++++++++++++++++++++++++++++++++++----------------------
+ 1 files changed, 55 insertions(+), 32 deletions(-)
+
+commit 46613836f587928d7c10f05d8377740b8c03367c
+Author: GLS_PLK <mariax.e.kaminski@intel.com>
+Date:   Tue Oct 19 23:29:52 2010 +0000
+
+    l10n: Updated Polish (pl) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/pl.po |   63 +++++++++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 36 insertions(+), 27 deletions(-)
+
+commit 3c734d00d40944220628f73d0208f0da4506e115
+Author: Etsuko Murozono <etsukomuro@gmail.com>
+Date:   Tue Oct 19 20:46:00 2010 +0000
+
+    l10n: Updated Japanese (ja) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ja.po |   83 +++++++++++++++++++++++++++++--------------------------------
+ 1 files changed, 39 insertions(+), 44 deletions(-)
+
+commit e3207a2f1306be8a189ba6f7f955adf328bb0381
+Author: GLS_PTB <bechtg@gmail.com>
+Date:   Tue Oct 19 19:11:02 2010 +0000
+
+    l10n: Updated Portuguese (Brazilian) (pt_BR) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/pt_BR.po |   97 +++++++++++++++++++++++++++++++----------------------------
+ 1 files changed, 51 insertions(+), 46 deletions(-)
+
+commit 023e4b7386125fcc5f08b4677b0e95f3af4753d8
+Author: GLS_CHS <yun.nie@ptiglobal.net>
+Date:   Tue Oct 19 18:44:02 2010 +0000
+
+    l10n: Updated Chinese (China) (zh_CN) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/zh_CN.po |  103 ++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 52 insertions(+), 51 deletions(-)
+
+commit b47188ed55c9de761c732f4e4cbe48350eba2ae1
+Author: Thomas Wood <thomas.wood@intel.com>
+Date:   Tue Oct 19 14:36:51 2010 +0100
+
+    feed-switcher: Fix spelling of "configured"
+    
+    Fixes: http://bugs.meego.com/show_bug.cgi?id=8622
+
+ src/mps-feed-switcher.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit e51bda5eb1d6675b7846e2a3591adf3dc35f5b51
+Author: GLS_KOR <sunx.kim@intel.com>
+Date:   Mon Sep 27 15:33:57 2010 +0000
+
+    l10n: Updated Korean (ko) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ko.po |   16 ++++++++--------
+ 1 files changed, 8 insertions(+), 8 deletions(-)
+
+commit 5a46346238fa85c946265548e690c999e57155eb
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Sep 20 13:50:50 2010 +0100
+
+    feed-pane: Change geotagging strings
+    
+    Fixes: http://bugs.meego.com/show_bug.cgi?id=5630
+
+ src/mps-feed-pane.c |   10 +++++-----
+ 1 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 411df87ca9dd13b363191b75ef8c003ab436cf43
+Author: Clara Steiner-Jay <csteiner@aracnet.com>
+Date:   Thu Sep 16 18:44:18 2010 +0000
+
+    l10n: Updated German (de) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/de.po |   60 +++++++++++++++++++++++++++++++++++-------------------------
+ 1 files changed, 35 insertions(+), 25 deletions(-)
+
+commit 1ade500955cc79e53cf6f934f18da87ffbf14635
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Sep 13 14:38:23 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 83c820ee58d15129c3fec8068365fd1d3f1f0081
+Author: Csanád Tóth <toth.csanad@kde.hu>
+Date:   Sun Sep 12 15:03:59 2010 +0000
+
+    l10n: Updated Hungarian (hu) translation to 100%
+    
+    New status: 17 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/hu.po |   50 ++++++++++++++++++++++++++++----------------------
+ 1 files changed, 28 insertions(+), 22 deletions(-)
+
+commit 7c89dde3ef44d70d601711fce729b829b38eb7ae
+Author: Thomas Wood <thomas.wood@intel.com>
+Date:   Mon Sep 6 13:42:05 2010 +0100
+
+    Add people.png for the out of box experience
+
+ data/theme/people.png |  Bin 0 -> 3595 bytes
+ 1 files changed, 0 insertions(+), 0 deletions(-)
+
+commit dc5bde1cd1bb5a09ce769c3ea134fc822a875f1d
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Sep 6 13:27:04 2010 +0100
+
+    feed-switcher: Check that we've got a valid app info for gnome-control-center
+    
+    Prevents: http://bugs.meego.com/show_bug.cgi?id=6301
+
+ src/mps-feed-switcher.c |    7 +++++++
+ 1 files changed, 7 insertions(+), 0 deletions(-)
+
+commit dc564f8c9bce69666a1454d5646804796b1dfbbf
+Author: Thomas Wood <thomas.wood@intel.com>
+Date:   Wed Sep 1 14:29:32 2010 +0100
+
+    Implement the new out of box experience
+    
+    Fixes bug: http://bugs.meego.com/show_bug.cgi?id=1777
+
+ data/theme/Makefile.am                   |    5 +-
+ data/theme/background-gradient.png       |  Bin 0 -> 588 bytes
+ data/theme/content-panel-header-grey.png |  Bin 0 -> 182 bytes
+ data/theme/panel.css                     |   24 ++++++
+ src/meego-panel-status.c                 |    5 -
+ src/mps-feed-switcher.c                  |  121 +++++++++++++++++++++++++-----
+ 6 files changed, 131 insertions(+), 24 deletions(-)
+
+commit 322f635dd23c8c1a971f56a96b0bfac07734409e
+Author: GLS_ITA1 <francescax.godani.muzi@intel.com>
+Date:   Thu Aug 26 18:20:57 2010 +0000
+
+    l10n: Updated Italian (it) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/it.po |   18 +++++++++---------
+ 1 files changed, 9 insertions(+), 9 deletions(-)
+
+commit 27551a4f0e2f70bd709a8d2eb8f32ee8d50dcccd
+Author: Annika_Olsson <AnnikaNbpt@gmail.com>
+Date:   Thu Aug 26 18:10:04 2010 +0000
+
+    l10n: Updated Swedish (sv) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/sv.po |   47 +++++++++++++++++++++++++++--------------------
+ 1 files changed, 27 insertions(+), 20 deletions(-)
+
+commit e209f0ccd3cb9d2212a1a34ba4c0a107924fd4ac
+Author: gls_esn1 <pablo24uk@yahoo.com>
+Date:   Thu Aug 26 01:25:19 2010 +0000
+
+    l10n: Updated Spanish (Castilian) (es) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/es.po |   22 +++++++++++-----------
+ 1 files changed, 11 insertions(+), 11 deletions(-)
+
+commit 86642eab1dd6a8b6a0c731c74d962e78dbcadd16
+Author: GLSJPN_Yukari <yukarix.yamashita@intel.com>
+Date:   Wed Aug 25 20:18:22 2010 +0000
+
+    l10n: Updated Japanese (ja) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ja.po |   31 ++++++++++++++++++++++---------
+ 1 files changed, 22 insertions(+), 9 deletions(-)
+
+commit 6f0703f9facb1e4d7c17bff5ebfb0ed06ca2a727
+Author: dnoway <dnoway@gmail.com>
+Date:   Wed Aug 25 13:42:15 2010 +0000
+
+    l10n: Updated Portuguese (Brazilian) (pt_BR) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/pt_BR.po |   29 +++++++++++++++--------------
+ 1 files changed, 15 insertions(+), 14 deletions(-)
+
+commit 064c45e66bb70707258e610ec68eec243adcb2d7
+Author: GLS_DEU1 <clarax.steiner-jay@intel.com>
+Date:   Tue Aug 24 16:17:24 2010 -0700
+
+    l10n: Updates to German (de) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/de.po |   42 +++++++++++++++++++++---------------------
+ 1 files changed, 21 insertions(+), 21 deletions(-)
+
+commit 946bc7820048513ddfaeddbd31450ec6457a5ce6
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Aug 24 16:18:16 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 63d5fc527dc93d1ebc0fa22f06a088f68253e34c
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Aug 24 11:23:22 2010 +0100
+
+    feed-switcher: Support dynamically loaded pane plugins
+
+ src/mps-feed-switcher.c |  149 +++++++++++++++++++++++++++++++++++++++++++++-
+ 1 files changed, 145 insertions(+), 4 deletions(-)
+
+commit 47f9987e7e3b945556b047b125bb19bef49360e5
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Aug 24 11:16:41 2010 +0100
+
+    build: Export the directory where the service pane plugins are stored
+
+ configure.ac    |    3 +++
+ src/Makefile.am |    3 ++-
+ 2 files changed, 5 insertions(+), 1 deletions(-)
+
+commit 2e6c3c4ad0d01d25049da3240ec82b0501e036b1
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Aug 24 11:15:34 2010 +0100
+
+    build: Add header file to represent te loadable pane module
+
+ src/Makefile.am  |    3 ++-
+ src/mps-module.h |   22 ++++++++++++++++++++++
+ 2 files changed, 24 insertions(+), 1 deletions(-)
+
+commit 3ec39f01ba3adb500a33baa756ae2308ef581dff
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Aug 24 10:51:36 2010 +0100
+
+    Fix error in copyright header
+
+ src/mps-feed-pane.c     |    2 +-
+ src/mps-feed-pane.h     |    2 +-
+ src/mps-feed-switcher.c |    2 +-
+ src/mps-feed-switcher.h |    2 +-
+ src/mps-geotag-pane.c   |    2 +-
+ src/mps-geotag-pane.h   |    2 +-
+ src/mps-tweet-card.c    |    2 +-
+ src/mps-tweet-card.h    |    2 +-
+ src/mps-view-bridge.c   |    2 +-
+ src/mps-view-bridge.h   |    2 +-
+ 10 files changed, 10 insertions(+), 10 deletions(-)
+
+commit 54305c38a2d0cc002d79bf290380a123152fc95b
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Aug 20 17:41:40 2010 +0100
+
+    build: Bump libsocialweb dependency
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 0b735dbe36b9d6063341c534283fd71a4c43dac3
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Aug 20 16:25:04 2010 +0100
+
+    feed-pane/feed-switcher: Port to new capabilities
+
+ src/mps-feed-pane.c     |    4 ++--
+ src/mps-feed-switcher.c |   31 ++++++++++++++++++-------------
+ 2 files changed, 20 insertions(+), 15 deletions(-)
+
+commit 77dfa3ef12e995dae85b03f783aabc457f317d58
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Aug 18 13:28:48 2010 +0100
+
+    build: Install headers
+
+ src/Makefile.am |   21 +++++++++++++--------
+ 1 files changed, 13 insertions(+), 8 deletions(-)
+
+commit e5dff397bb76ce56cadc6cd6df11327ea6af1962
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Aug 18 13:21:11 2010 +0100
+
+    build: Add pkg-config file for meego-panel-status
+
+ configure.ac                 |    1 +
+ src/Makefile.am              |    4 ++++
+ src/meego-panel-status.pc.in |   14 ++++++++++++++
+ 3 files changed, 19 insertions(+), 0 deletions(-)
+
+commit a5a2a9c9f1f14a637bf449a870fdacb7e8f768c3
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Aug 18 13:14:15 2010 +0100
+
+    build: Create a libmeego-panel-status shared library
+
+ src/Makefile.am |   11 +++++++++--
+ 1 files changed, 9 insertions(+), 2 deletions(-)
+
+commit 7204bcb7f06fcffe4323c085c84f2f4e221faee9
+Author: tonyk <tonyk_1@mail.ru>
+Date:   Mon Aug 23 17:37:06 2010 +0000
+
+    l10n: Updated Russian (ru) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ru.po |   24 ++++++++++++------------
+ 1 files changed, 12 insertions(+), 12 deletions(-)
+
+commit e9a47e65eed7bda557bae75fdd4443594103d172
+Author: foolegg <sd.foolegg@gmail.com>
+Date:   Mon Aug 16 11:36:15 2010 +0000
+
+    l10n: Updated Chinese (China) (zh_CN) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/zh_CN.po |   34 ++++++++++++++--------------------
+ 1 files changed, 14 insertions(+), 20 deletions(-)
+
+commit e3ebbcc7ede03ccfdaab6cc28072efbe4a060c47
+Author: Mostafa Daneshvar <lashar@fedoraproject.org>
+Date:   Wed Aug 11 22:30:48 2010 +0000
+
+    l10n: Updated Persian (fa) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/fa.po |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 61b5bc4e19628f0bb214b89430b1f4b81e59c453
+Author: Mostafa Daneshvar <lashar@fedoraproject.org>
+Date:   Wed Aug 11 22:28:10 2010 +0000
+
+    l10n: new persian translation
+    
+    New status: 22 messages complete with 0 fuzzies and 2 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/fa.po |  128 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 128 insertions(+), 0 deletions(-)
+
+commit 2b1a0f23fe0b14b5067fdf69980e9c258a1c28d5
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Aug 5 11:25:20 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 84d2e01461257caed53339fecf00e38b858274a5
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Jul 21 15:14:42 2010 +0100
+
+    Port status panel to use new query and item view APIs
+
+ src/meego-panel-status.c |    8 ++++----
+ src/mps-feed-pane.c      |   21 +++++++++++----------
+ src/mps-view-bridge.c    |   26 +++++++++++++-------------
+ src/mps-view-bridge.h    |    4 ++--
+ 4 files changed, 30 insertions(+), 29 deletions(-)
+
+commit cc88d03eb8816f2b0238880919338b0c7206129e
+Author: A S Alam <apreet.alam@gmail.com>
+Date:   Tue Aug 3 02:48:56 2010 +0000
+
+    l10n: Updated Panjabi (Punjabi) (pa) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/pa.po |   48 ++++++++++++++++++++++++++----------------------
+ 1 files changed, 26 insertions(+), 22 deletions(-)
+
+commit 7480d2be07bf25641206f7cf35e45cd6d8b71e72
+Author: Cheng-Chia Tseng <pswo10680@gmail.com>
+Date:   Sun Aug 1 12:07:31 2010 +0000
+
+    l10n: Updated Chinese (Taiwan) (zh_TW) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/zh_TW.po |   10 +++++-----
+ 1 files changed, 5 insertions(+), 5 deletions(-)
+
+commit bbb71d2802fd82cdecde1d78449116e51d4e9928
+Author: auke <auke-jan.h.kok@intel.com>
+Date:   Mon Jul 26 17:34:58 2010 +0000
+
+    l10n: Updated Dutch (Netherlands) (nl) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/nl.po |    5 +----
+ 1 files changed, 1 insertions(+), 4 deletions(-)
+
+commit 9b5ba5e6b3a4792a7f78f0ce25e280fd1e63e1ff
+Author: mafvisje <dooitzedejong@gmail.com>
+Date:   Mon Jul 26 17:28:49 2010 +0000
+
+    l10n: Updated Dutch (Netherlands) (nl) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/nl.po |   58 +++++++++++++++++++++++++++++++---------------------------
+ 1 files changed, 31 insertions(+), 27 deletions(-)
+
+commit 1749199748283514a3eac23c73d35918b5daabff
+Author: Tomáš Virgl <tomas@virgl.net>
+Date:   Fri Jul 23 19:20:38 2010 +0000
+
+    l10n: Updated Slovak (sk) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/sk.po |   12 ++++++------
+ 1 files changed, 6 insertions(+), 6 deletions(-)
+
+commit 202ee2645806c068f6b0e458506c383731357f35
+Author: Tomáš Virgl <tomas@virgl.net>
+Date:   Fri Jul 23 19:18:56 2010 +0000
+
+    l10n: Updated Slovak (sk) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/sk.po |   85 +++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 43 insertions(+), 42 deletions(-)
+
+commit 9f09e16a3c8cc0392088691cb0b4ec32127ba3e4
+Author: PauGNU <>
+Date:   Wed Jul 21 21:14:25 2010 +0000
+
+    l10n: First ca@valencia translation for this file
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ca@valencia.po |  143 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 143 insertions(+), 0 deletions(-)
+
+commit 70b6e82453f7a85b3f479c5a55a8208288cc9613
+Author: Margie Foster <margie@linux.intel.com>
+Date:   Tue Jul 20 17:55:00 2010 +0000
+
+    l10n: Updated English (United Kingdom) (en_GB) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/en_GB.po |   62 +++++++++++++++++++++++++++++++++-------------------------
+ 1 files changed, 35 insertions(+), 27 deletions(-)
+
+commit 10c7bab6608ed41b3355255b8607ac07a56a4f03
+Author: Anousak Souphavanh <anousak@gmail.com>
+Date:   Tue Jul 20 09:36:34 2010 +0000
+
+    l10n: Update to Lao translation
+    
+    New status: 11 messages complete with 0 fuzzies and 13 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/lo.po |  135 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 135 insertions(+), 0 deletions(-)
+
+commit 8100c03237482bd5b041b1a66f1bdbdb2b66a3eb
+Author: Martine <martine.landais@intel.com>
+Date:   Mon Jul 19 20:53:29 2010 +0000
+
+    l10n: Updated French (fr) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/fr.po |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit c6d2783a4f5dbca4a0ca0d1f21fb1c94f9df7679
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Jul 15 18:57:10 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 2ff1f5e0dcc57acb8cc2afa51110a73b26e51e9f
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Jul 15 18:51:38 2010 +0100
+
+    styling: Standardise on px font sizes
+
+ data/theme/panel.css |   24 ++++++++++++------------
+ 1 files changed, 12 insertions(+), 12 deletions(-)
+
+commit 0c5888d75da007fd902e502d330c8067bd8c3ac2
+Author: Andika Triwidada <andika@gmail.com>
+Date:   Wed Jul 14 19:44:21 2010 +0000
+
+    l10n: Updated Indonesian (id) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/id.po |   76 ++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 40 insertions(+), 36 deletions(-)
+
+commit d934d91603be0b0c8891a36a0a23a99ed4078459
+Author: zerng07 <pswo10680@gmail.com>
+Date:   Sat Jul 10 04:44:43 2010 -0700
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   26 +++++++++++++-------------
+ 1 files changed, 13 insertions(+), 13 deletions(-)
+
+commit 303963eba29309c061892cc789e1cb1a480dd279
+Author: fri <pavelfric@seznam.cz>
+Date:   Fri Jul 9 20:29:57 2010 +0000
+
+    l10n: Updated Czech (cs) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/cs.po |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 9d571d9f18c7e9b8862a9f6d2fcdc15680c57c56
+Author: Jean Cayron <jean.cayron@gmail.com>
+Date:   Fri Jul 9 13:06:59 2010 +0000
+
+    l10n: Updated Walloon (wa) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/wa.po |   60 ++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 30 insertions(+), 30 deletions(-)
+
+commit 86170297be006c30301fbd3699d0c35bb2c45f1d
+Author: Marko Vertainen <marko.vertainen@iki.fi>
+Date:   Thu Jul 8 15:15:57 2010 +0000
+
+    l10n: Updated Finnish (fi) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/fi.po |   39 ++++++++++++++++-----------------------
+ 1 files changed, 16 insertions(+), 23 deletions(-)
+
+commit 25545f9f5dc36cbea802adf4388dea0a9d20b5f4
+Author: mbouzada <mbouzada@gmail.com>
+Date:   Wed Jul 7 08:52:55 2010 +0000
+
+    l10n: Updates Galician translation
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/gl.po |  128 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 128 insertions(+), 0 deletions(-)
+
+commit d9c7c13d7a3fcf9f8537b3182ed7a4fab1643d56
+Author: fri <pavelfric@seznam.cz>
+Date:   Wed Jul 7 08:20:45 2010 +0000
+
+    l10n: Czech translation
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/cs.po |  197 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 197 insertions(+), 0 deletions(-)
+
+commit b11e06cb0d999b89f0832b99076eefb8ef4dff88
+Author: Og Maciel <ogmaciel@gnome.org>
+Date:   Wed Jul 7 02:01:11 2010 +0000
+
+    l10n: Updated Portuguese (Brazilian) (pt_BR) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/pt_BR.po |   52 ++++++++++++++++++++++++++++------------------------
+ 1 files changed, 28 insertions(+), 24 deletions(-)
+
+commit 84796f7ecf8b81aad1e72223895b143be7801f3f
+Author: Toni Hermoso Pulido <toniher@softcatala.cat>
+Date:   Wed Jul 7 00:40:07 2010 +0000
+
+    l10n: Catalan translation
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ca.po |  143 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 143 insertions(+), 0 deletions(-)
+
+commit f43779774b8232eb8575555513655aaa694a4ad2
+Author: mohammad Alhargan <malham1@gmail.com>
+Date:   Tue Jul 6 23:40:09 2010 +0000
+
+    l10n: Updated Arabic (ar) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ar.po |  212 +++++++++++++++++++++++++++++++++++++++++---------------------
+ 1 files changed, 140 insertions(+), 72 deletions(-)
+
+commit 8949d571294679e0a347f3dd15947cede519b10f
+Author: mlandais <martine.landais@intel.com>
+Date:   Tue Jul 6 13:39:32 2010 -0700
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fr.po |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+commit 40aa21f9d6ee1a63c8251253a507c38cc3397904
+Author: mlandais <martine.landais@intel.com>
+Date:   Tue Jul 6 13:38:00 2010 -0700
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fr.po |   66 ++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 32 insertions(+), 34 deletions(-)
+
+commit ad4d5350465865af7774a663983853809958efdc
+Author: Marcin Sołtysiak <marcin.p.soltysiak@gmail.com>
+Date:   Tue Jul 6 07:55:37 2010 +0000
+
+    l10n: Updated Polish (pl) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/pl.po |   33 +++++++++++++++++----------------
+ 1 files changed, 17 insertions(+), 16 deletions(-)
+
+commit a88439f75b0e01580cad43eda745f3fb4530bf28
+Author: Iñigo Varela <ivarela@softastur.org>
+Date:   Sat Jul 3 13:04:48 2010 +0000
+
+    l10n: Updated Asturian (ast) translation to 100%
+    
+    New status: 24 messages complete with 0 fuzzies and 0 untranslated.
+    
+    Transmitted-via: Transifex (www.transifex.net).
+
+ po/ast.po |   20 ++++++++++----------
+ 1 files changed, 10 insertions(+), 10 deletions(-)
+
+commit ad8b86511fb4a70df987dd8b8cd91c331096e122
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Jun 18 18:19:40 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit f5df0b6d936450a50324779a1b4c2531cd9eeeaa
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Jun 18 17:58:31 2010 +0100
+
+    feed-switcher: Change label for new accounts button
+
+ src/mps-feed-switcher.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 8c78072766342b4fc60cde4317c9296bc2f20357
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Jun 18 17:45:20 2010 +0100
+
+    Transition from Moblin to MeeGo
+
+ Makefile.am                                      |    2 +-
+ README                                           |   18 +--
+ autogen.sh                                       |    4 +-
+ configure.ac                                     |   18 +-
+ data/Makefile.am                                 |   10 +-
+ data/meego-panel-status.desktop.in.in            |   16 ++
+ data/moblin-panel-status.desktop.in.in           |   16 --
+ data/theme/Makefile.am                           |    2 +-
+ po/POTFILES.in                                   |    4 +-
+ src/Makefile.am                                  |   17 +-
+ src/com.meego.UX.Shell.Panels.status.service.in  |    4 +
+ src/meego-panel-status.c                         |  239 ++++++++++++++++++++++
+ src/moblin-panel-status.c                        |  239 ----------------------
+ src/mps-feed-pane.c                              |    6 +-
+ src/mps-feed-switcher.c                          |    4 +-
+ src/mps-geotag-pane.c                            |   12 +-
+ src/mps-tweet-card.c                             |    6 +-
+ src/org.moblin.UX.Shell.Panels.status.service.in |    4 -
+ 18 files changed, 305 insertions(+), 316 deletions(-)
+
+commit 9c0810052c3d1032632ae7772c082e3277f498dc
+Author: ivarela <malditoastur@gmail.com>
+Date:   Thu May 13 14:28:13 2010 -0700
+
+    l10n: updates asturian translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ast.po |  142 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 142 insertions(+), 0 deletions(-)
+
+commit 537455b346535f907e6c5e644ac439abd8cdc90f
+Author: GLS_NLD3 <thomasx.martens@intel.com>
+Date:   Tue May 11 11:05:16 2010 -0700
+
+    l10n: Updates to Dutch (Flemish) (nl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/nl.po |   34 +++++++++++++++++++---------------
+ 1 files changed, 19 insertions(+), 15 deletions(-)
+
+commit ff12e4f636350cb78912bf877f585a11fa79a587
+Author: GLS_CHS2 <mackeyx.tian@intel.com>
+Date:   Tue May 11 10:33:27 2010 -0700
+
+    l10n: Updates to Chinese (China) (zh_CN) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_CN.po |   86 +++++++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 48 insertions(+), 38 deletions(-)
+
+commit a3de0ec148dabdd244299cb52c0e8a3136712b4a
+Author: GLS_DEU1 <clarax.steiner-jay@intel.com>
+Date:   Tue May 11 09:59:32 2010 -0700
+
+    l10n: Updates to Finnish (fi) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fi.po |   49 +++++++++++++++++++++++++++++++++----------------
+ 1 files changed, 33 insertions(+), 16 deletions(-)
+
+commit 3c627b38712700d74f14105264ae8f10a4fa9b12
+Author: nedrichards <nicholas.e.richards@intel.com>
+Date:   Tue May 11 09:46:42 2010 -0700
+
+    l10n: Updates to English (United Kingdom) (en_GB) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/en_GB.po |   77 +++++++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 43 insertions(+), 34 deletions(-)
+
+commit 9e0c11a5266762d562eb7af4c45aa647b9ab4ecb
+Author: GLS_KOR <sunx.kim@intel.com>
+Date:   Tue May 11 08:43:53 2010 -0700
+
+    l10n: Updates to Korean (ko) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ko.po |   32 ++++++++++++++++++--------------
+ 1 files changed, 18 insertions(+), 14 deletions(-)
+
+commit f9a5949aa293ef17eab1cdec3eb07e5be34a56ba
+Author: GLSJPN_Yukari <yukarix.yamashita@intel.com>
+Date:   Mon May 10 14:55:34 2010 -0700
+
+    l10n: Updates to Japanese (ja) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ja.po |   36 ++++++++++++++++++++----------------
+ 1 files changed, 20 insertions(+), 16 deletions(-)
+
+commit 3b8a4984b427f60853c1253155960f5fa3971a56
+Author: gls_rus1 <bogdanx.nosach@intel.com>
+Date:   Mon May 10 12:31:14 2010 -0700
+
+    l10n: Updates to Russian (ru) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ru.po |   62 +++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 33 insertions(+), 29 deletions(-)
+
+commit 96354080268dca23b13940a1896be56cb549b1c1
+Author: GLS_ITA1 <francescax.godani.muzi@intel.com>
+Date:   Mon May 10 11:55:56 2010 -0700
+
+    l10n: Updates to Italian (it) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/it.po |   98 +++++++++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 56 insertions(+), 42 deletions(-)
+
+commit 27333376d1bbc61a6477585fb60c763f6afef47f
+Author: tomasgalicia <tomas.galicia@intel.com>
+Date:   Mon May 10 11:39:44 2010 -0700
+
+    l10n: Updates to Spanish (Castilian) (es) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/es.po |   62 +++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 33 insertions(+), 29 deletions(-)
+
+commit 15ac3947c514a6427fe95c8e52e67529b6e11919
+Author: GLS_PTB <gaborx.k.becht@intel.com>
+Date:   Mon May 10 10:42:15 2010 -0700
+
+    l10n: Updates to Brazilian Portuguese (pt_BR) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pt_BR.po |   32 ++++++++++++++++++--------------
+ 1 files changed, 18 insertions(+), 14 deletions(-)
+
+commit 6d1e6608825c195abf7d65c998d7dc08de80044d
+Author: GLS_FRA3 <david.cicognani@ptiglobal.net>
+Date:   Mon May 10 10:27:12 2010 -0700
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fr.po |   62 +++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 33 insertions(+), 29 deletions(-)
+
+commit 26fc862e016d6eb710344f7a46f34daed42cd369
+Author: GLS_POL1 <ewax.zielinska@intel.com>
+Date:   Mon May 10 10:26:08 2010 -0700
+
+    l10n: Updates to Polish (pl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pl.po |   35 +++++++++++++++++++----------------
+ 1 files changed, 19 insertions(+), 16 deletions(-)
+
+commit bd9d5887f852702b7852e794957e556316ee4d82
+Author: GLS_SVE1 <anna-lenax.schon@intel.com>
+Date:   Mon May 10 10:24:01 2010 -0700
+
+    l10n: Updates to Swedish (sv) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/sv.po |   62 +++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 33 insertions(+), 29 deletions(-)
+
+commit 0403345de184163c94c763c839a80f36baec7a6a
+Author: GLS_DEU1 <clarax.steiner-jay@intel.com>
+Date:   Mon May 10 10:06:45 2010 -0700
+
+    l10n: Updates to German (de) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/de.po |   62 +++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 33 insertions(+), 29 deletions(-)
+
+commit 5c89c8c765a05fc7a841fc60446cfb5786ea8ebb
+Author: zerng07 <pswo10680@gmail.com>
+Date:   Mon May 10 08:37:04 2010 -0700
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   64 +++++++++++++++++++++++++++++++++++------------------------
+ 1 files changed, 38 insertions(+), 26 deletions(-)
+
+commit bcdeaa700e8b83baf14d9801b18e39cd5d6a8fbf
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon May 10 13:53:36 2010 +0100
+
+    styling: Give the feed pane an opaque background
+    
+    Fixes: http://bugs.meego.com/show_bug.cgi?id=1767
+
+ data/theme/panel.css |    5 +++++
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+
+commit fb4a8b84b56a121ba337c2eece2e6b586a0da9cf
+Author: Djan <jean.cayron@gmail.com>
+Date:   Mon May 10 04:35:25 2010 -0700
+
+    l10n: Updates to Walloon (wa) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/wa.po |  134 ++++++++++++++++++++++++++++++++++----------------------------
+ 1 files changed, 74 insertions(+), 60 deletions(-)
+
+commit 9fb1b9a01f1ad65fe8087c123c9a7a1d2bcbda8f
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri May 7 15:19:10 2010 +0100
+
+    geotag-pane: Avoid crash when reverse geocoding fails
+
+ src/mps-geotag-pane.c |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 0480e30699b99d4e7f34b003740f72c5883923ac
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri May 7 13:52:40 2010 +0100
+
+    feed-pane: Add a message for when we failed to guess location
+    
+    Part of the fix for: http://bugs.meego.com/show_bug.cgi?id=1574
+
+ src/mps-feed-pane.c |   54 ++++++++++++++++++++++++++++----------------------
+ 1 files changed, 30 insertions(+), 24 deletions(-)
+
+commit a7bcd932a6c2624b4b04396efbb566beccef4239
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri May 7 13:34:32 2010 +0100
+
+    geotag-pane: Search for location upon hitting return in the search box
+    
+    Part of the fix for: http://bugs.meego.com/show_bug.cgi?id=1574
+
+ src/mps-geotag-pane.c |   44 +++++++++++++++++++++++++++++++-------------
+ 1 files changed, 31 insertions(+), 13 deletions(-)
+
+commit 7561b28eb1ec474af7523113202626e1df394c43
+Author: GLS_CHS2 <mackeyx.tian@intel.com>
+Date:   Thu May 6 16:20:51 2010 -0700
+
+    l10n: Updates to Chinese (China) (zh_CN) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_CN.po |   76 +++++++++++++++++++++++++++++++----------------------------
+ 1 files changed, 40 insertions(+), 36 deletions(-)
+
+commit 4ab335337dd158a06f1f40cd2946277c169c4462
+Author: GLS_NLD3 <thomasx.martens@intel.com>
+Date:   Thu May 6 09:12:49 2010 -0700
+
+    l10n: Updates to Dutch (Flemish) (nl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/nl.po |   67 +++++++++++++++++++++++++++++--------------------------------
+ 1 files changed, 32 insertions(+), 35 deletions(-)
+
+commit 18bf226de0deb4e720d00c9bf3c73e08131d8fc3
+Author: GLS_KOR <sunx.kim@intel.com>
+Date:   Thu May 6 09:12:40 2010 -0700
+
+    l10n: Updates to Korean (ko) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ko.po |  151 ++++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 78 insertions(+), 73 deletions(-)
+
+commit 9f918c741900e1f46c9b67849dcda54041824c47
+Author: GLSJPN_Yukari <yukarix.yamashita@intel.com>
+Date:   Wed May 5 22:53:34 2010 -0700
+
+    l10n: Updates to Japanese (ja) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ja.po |   71 +++++++++++++++++++++++++++++--------------------------------
+ 1 files changed, 34 insertions(+), 37 deletions(-)
+
+commit ba8e0ad0760533ffef07f0c119019e64f299f961
+Author: aalam <apreet.alam@gmail.com>
+Date:   Wed May 5 19:15:50 2010 -0700
+
+    l10n: Updates to Panjabi (Punjabi) (pa) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pa.po |   70 ++++++++++++++++++++++++++++++++++---------------------------
+ 1 files changed, 39 insertions(+), 31 deletions(-)
+
+commit 2a5ff8c6617f5c78680b94e889b71ed2004dbcff
+Author: GLS_FIN4 <annax.bergman@intel.com>
+Date:   Wed May 5 13:59:34 2010 -0700
+
+    l10n: Updates to Finnish (fi) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fi.po |  146 ++++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 75 insertions(+), 71 deletions(-)
+
+commit 6e2982868e0f5deed4b61b1bf6812a138baa0506
+Author: GLS_POL1 <ewax.zielinska@intel.com>
+Date:   Wed May 5 13:00:23 2010 -0700
+
+    l10n: Updates to Polish (pl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pl.po |   52 +++++++++++++++++++++++++++++++---------------------
+ 1 files changed, 31 insertions(+), 21 deletions(-)
+
+commit e19a41afeccd0542193ff1953840a4e15eee4576
+Author: GLS_PTB <gaborx.k.becht@intel.com>
+Date:   Wed May 5 11:43:51 2010 -0700
+
+    l10n: Updates to Brazilian Portuguese (pt_BR) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pt_BR.po |   48 +++++++++++++++++++++++++++++-------------------
+ 1 files changed, 29 insertions(+), 19 deletions(-)
+
+commit 1313bc1fb9178e12db398e2ac7cd884c0ff939a1
+Author: GLS_FRA3 <david.cicognani@ptiglobal.net>
+Date:   Wed May 5 11:25:27 2010 -0700
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fr.po |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 395b34145e853f97da46560ff1b8cf214f9d9fd4
+Author: GLS_SVE1 <anna-lenax.schon@intel.com>
+Date:   Wed May 5 11:16:57 2010 -0700
+
+    l10n: Updates to Swedish (sv) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/sv.po |   78 ++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 41 insertions(+), 37 deletions(-)
+
+commit b3da05b02b71e30ee90ca86d65b012507c8a45c2
+Author: GLS_ITA1 <francescax.godani.muzi@intel.com>
+Date:   Wed May 5 11:08:05 2010 -0700
+
+    l10n: Updates to Italian (it) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/it.po |   97 +++++++++++++++++++++++++++++++++++---------------------------
+ 1 files changed, 55 insertions(+), 42 deletions(-)
+
+commit d06d3f369be54f82563a6d1245916a571d68faf4
+Author: GLS_FRA3 <david.cicognani@ptiglobal.net>
+Date:   Wed May 5 10:28:02 2010 -0700
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fr.po |   86 +++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 43 insertions(+), 43 deletions(-)
+
+commit d5863b5c85f0c3ad1f1539341dab600591c442ab
+Author: andika <andika@gmail.com>
+Date:   Wed May 5 01:38:36 2010 -0700
+
+    l10n: Updates to Indonesian (id) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/id.po |   58 ++++++++++++++++++++++++++++++++++------------------------
+ 1 files changed, 34 insertions(+), 24 deletions(-)
+
+commit ad17acd3ddab0559eb159186b7a1795ad6e6dea7
+Author: zerng07 <pswo10680@gmail.com>
+Date:   Mon May 3 22:46:41 2010 -0700
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   92 ++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 47 insertions(+), 45 deletions(-)
+
+commit a1568c27929a727e3f72afa3e3b26247c4cafd97
+Author: GLS_DEU1 <clarax.steiner-jay@intel.com>
+Date:   Mon May 3 17:29:05 2010 -0700
+
+    l10n: Updates to German (de) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/de.po |   64 +++++++++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 37 insertions(+), 27 deletions(-)
+
+commit 4cc808911ab96ce4c1857f246e355207758f4ab6
+Author: tomasgalicia <tomas.galicia@intel.com>
+Date:   Mon May 3 16:05:21 2010 -0700
+
+    l10n: Updates to Spanish (Castilian) (es) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/es.po |   10 +++++-----
+ 1 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 2d33670bcfa31966ece75afef7983900a872f480
+Author: tomasgalicia <tomas.galicia@intel.com>
+Date:   Mon May 3 16:04:11 2010 -0700
+
+    l10n: Updates to Spanish (Castilian) (es) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/es.po |   56 +++++++++++++++++++++++++++++++++-----------------------
+ 1 files changed, 33 insertions(+), 23 deletions(-)
+
+commit bafd55fc52794a50cf2ddf05ae99f14e3d53a27f
+Author: margie <margie.foster@intel.com>
+Date:   Mon May 3 12:37:41 2010 -0700
+
+    l10n: Updates to English (United Kingdom) (en_GB) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/en_GB.po |  103 +++++++++++++++++++++++++++++++----------------------------
+ 1 files changed, 54 insertions(+), 49 deletions(-)
+
+commit 58ec41bcc37e4c76c2dbe6086c2f30e3b4ca523d
+Author: gls_rus1 <bogdanx.nosach@intel.com>
+Date:   Mon May 3 12:30:14 2010 -0700
+
+    l10n: Updates to Russian (ru) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ru.po |   81 ++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 42 insertions(+), 39 deletions(-)
+
+commit 33064251620725d6e99c58c5d27602d3f0844a6b
+Author: GLS_PTB <gaborx.k.becht@intel.com>
+Date:   Fri Apr 30 16:39:37 2010 -0700
+
+    l10n: Updates to Brazilian Portuguese (pt_BR) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pt_BR.po |   41 +++++++----------------------------------
+ 1 files changed, 7 insertions(+), 34 deletions(-)
+
+commit 3ba816d9f1f80ff4a595e71e9c25f1247cca976e
+Author: GLS_PTB <gaborx.k.becht@intel.com>
+Date:   Fri Apr 30 16:21:16 2010 -0700
+
+    l10n: Updates to Brazilian Portuguese (pt_BR) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pt_BR.po |   45 ++++++++++++++++++++++++++++++++++++---------
+ 1 files changed, 36 insertions(+), 9 deletions(-)
+
+commit fe39a17979e899431d4f21026755395a67fabdb8
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Apr 30 15:29:50 2010 +0100
+
+    panel-status: Fix placeholder message
+    
+    Fixes: http://bugs.meego.com/show_bug.cgi?id=1280
+
+ src/moblin-panel-status.c |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit b62d740e9d36e3f5fd1b8b8783bede4d66a9afe4
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Apr 30 15:25:05 2010 +0100
+
+    panel-status: Visual design tweak to correct position of label
+
+ src/moblin-panel-status.c |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 2031a1246e2ad1543f1ce930606b29e1d05c5519
+Author: GLS_FRA3 <david.cicognani@ptiglobal.net>
+Date:   Thu Apr 29 19:54:40 2010 -0700
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fr.po |  130 +++++++++++++++++++++++++++++++++----------------------------
+ 1 files changed, 70 insertions(+), 60 deletions(-)
+
+commit eba77cfecc95460898ad0cf084630141b953ad06
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Apr 28 18:52:44 2010 +0100
+
+    feed-pane: Expose the new reverse geocoded location
+    
+    Part of the fix for: http://bugs.meego.com/show_bug.cgi?id=833
+
+ src/mps-feed-pane.c |   42 +++++++++++++++++++++++++++++++++++++-----
+ 1 files changed, 37 insertions(+), 5 deletions(-)
+
+commit 89cca2be24d9eda419e31b0999660c75dcfa149a
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Apr 28 18:51:40 2010 +0100
+
+    geotag-pane: Reverse geocode the location
+    
+    Part of the fix for: http://bugs.meego.com/show_bug.cgi?id=833
+
+ src/mps-geotag-pane.c |   75 ++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 files changed, 74 insertions(+), 1 deletions(-)
+
+commit 70e69ea6003835d4241120a94f9b6c764534ce47
+Author: tomasgalicia <tomas.galicia@intel.com>
+Date:   Fri Apr 23 15:46:56 2010 -0700
+
+    l10n: Updates to Spanish (Castilian) (es) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/es.po |   26 +++++++++++++-------------
+ 1 files changed, 13 insertions(+), 13 deletions(-)
+
+commit d170228ae7b91ba407ec441f44a7c30405fbf3b1
+Author: TomasVirgl <tomas@virgl.net>
+Date:   Thu Apr 22 07:45:21 2010 -0700
+
+    l10n: Slovak translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/sk.po |  124 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 124 insertions(+), 0 deletions(-)
+
+commit 54af556abac42ae2c78c845d2db9187306084c37
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Apr 21 14:39:05 2010 +0100
+
+    Post branch version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit dc12630e7f954200ffc0dd6d32513860c435cae3
+Author: margie <margie.foster@intel.com>
+Date:   Thu Apr 15 13:25:57 2010 -0700
+
+    l10n: Updates to English (United Kingdom) (en_GB) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/en_GB.po |   55 +++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 29 insertions(+), 26 deletions(-)
+
+commit b16c282deb85a52c25164fde2d4c543db381c241
+Author: margie <margie.foster@intel.com>
+Date:   Thu Apr 15 13:25:01 2010 -0700
+
+    l10n: Updates to English (United Kingdom) (en_GB) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/en_GB.po |  134 ++++++++++++++++++++++++++++++++++++++++++-----------------
+ 1 files changed, 96 insertions(+), 38 deletions(-)
+
+commit 43fe615235551c4b1e6f5274ed7c404832acdd39
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Apr 15 19:10:11 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 36903b368a169115b1f97e726d9ee0821f4383f4
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Apr 15 18:42:56 2010 +0100
+
+    tweet-card: Use PengeClickableLabel for main body of tweets
+    
+    Fixes: http://bugzilla.meego.com/show_bug.cgi?id=832
+
+ src/mps-tweet-card.c |   27 +++++++++++++++++++++++++--
+ 1 files changed, 25 insertions(+), 2 deletions(-)
+
+commit 8a1baf3b362d7f5cb5b237c3a463f20ebb40b056
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Apr 15 18:38:52 2010 +0100
+
+    Import penge-clickable-label to enable clickable links
+    
+    Part of the fix for: http://bugzilla.meego.com/show_bug.cgi?id=832
+
+ src/Makefile.am             |    2 +
+ src/penge-clickable-label.c |  411 +++++++++++++++++++++++++++++++++++++++++++
+ src/penge-clickable-label.h |   62 +++++++
+ 3 files changed, 475 insertions(+), 0 deletions(-)
+
+commit c82c00c8d6e83182cac01b4cdaa31095cf8e6172
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Apr 15 16:26:58 2010 +0100
+
+    tweet-card: Lay out children directly
+    
+    This should significantly improve performance.
+    
+    Fixes: http://bugzilla.meego.com/show_bug.cgi?id=504
+
+ src/mps-tweet-card.c |  217 ++++++++++++++++++++++++++++++++++++++------------
+ src/mps-tweet-card.h |    4 +-
+ 2 files changed, 167 insertions(+), 54 deletions(-)
+
+commit cab1edcb4e9285a7f4d9ed73434a7110ab7b1cb6
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Apr 15 15:43:39 2010 +0100
+
+    tweet-card: Use more efficient GET_PRIVATE method
+
+ src/mps-tweet-card.c |    9 +++++----
+ src/mps-tweet-card.h |    3 +++
+ 2 files changed, 8 insertions(+), 4 deletions(-)
+
+commit 92996c1e5daaa78c1449ef42e449c610b3f1a4a8
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Apr 15 15:46:56 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 78c5fc8cff431c7306f3b834050f5bd826e59631
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Apr 15 15:44:02 2010 +0100
+
+    assets: Add asset missing from previous release
+
+ data/theme/status_card_background.png |  Bin 147 -> 151 bytes
+ 1 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 73cb1485724e2b1d3b6707b330eee85b90772562
+Author: tradomusnordic <tradomusnordic@gmail.com>
+Date:   Wed Apr 14 23:55:08 2010 -0700
+
+    l10n: Updates to Danish translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/da.po |  116 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 116 insertions(+), 0 deletions(-)
+
+commit 258c5a8d99a79c55836a36417ddef5d8c51f3983
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Apr 14 18:32:00 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 2564555ce3ef3f14c078af3f7ac3f8b9b90b3d69
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Apr 14 16:25:20 2010 +0100
+
+    view-bridge: Don't show the row separator on the last row
+    
+    Fixes: http://bugzilla.meego.com/show_bug.cgi?id=503
+
+ data/theme/panel.css  |    6 +++---
+ src/mps-view-bridge.c |    7 +++++++
+ 2 files changed, 10 insertions(+), 3 deletions(-)
+
+commit dd3cf9818f738b264e976e3b9193612dcb54aa05
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Apr 14 16:02:26 2010 +0100
+
+    styling: Use new panel background styling method
+
+ data/theme/panel.css |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit e00f9a1e03a885c00684d2e1b2f46f6cd319d469
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Apr 14 15:38:41 2010 +0100
+
+    feed-switcher: Use human readable name for service.
+    
+    Fix: http://bugzilla.meego.com/show_bug.cgi?id=502
+
+ src/mps-feed-switcher.c |    5 ++++-
+ 1 files changed, 4 insertions(+), 1 deletions(-)
+
+commit 0f87ed42111671795e2b46ffffd116ed60d162f0
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Apr 13 16:29:40 2010 +0100
+
+    Remove unused code
+
+ src/Makefile.am             |   24 +------------
+ src/mnb-status-marshal.list |    4 --
+ src/mnb-web-status-entry.h  |   76 -------------------------------------------
+ src/mnb-web-status-row.h    |   58 --------------------------------
+ 4 files changed, 2 insertions(+), 160 deletions(-)
+
+commit a63a760e15c13e20e52d0776b0805f1d04954af9
+Author: aalam <apreet.alam@gmail.com>
+Date:   Fri Apr 9 21:12:10 2010 -0700
+
+    l10n: Updates to Panjabi (Punjabi) (pa) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pa.po |  214 ++++++++++++++++++++++++++++++++++++++++++--------------------
+ 1 files changed, 146 insertions(+), 68 deletions(-)
+
+commit 9f30b1f5ee8bab34194e611a930485e3eb632797
+Author: GLSQA <namfonx.yeates@intel.com>
+Date:   Fri Apr 9 15:06:35 2010 -0700
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   18 +++++++++---------
+ 1 files changed, 9 insertions(+), 9 deletions(-)
+
+commit 90598521818179921e2ce92d81a0840afa406192
+Author: GLS_FRA3 <david.cicognani@ptiglobal.net>
+Date:   Fri Apr 9 07:25:24 2010 -0700
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fr.po |   20 ++++++++++----------
+ 1 files changed, 10 insertions(+), 10 deletions(-)
+
+commit fd991d82548e229d811f6ff205361eb1f4deb463
+Author: Djan <jean.cayron@gmail.com>
+Date:   Fri Apr 9 03:18:08 2010 -0700
+
+    l10n: Updates to Walloon (wa) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/wa.po |  117 ++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 58 insertions(+), 59 deletions(-)
+
+commit 481dd703cabc550a6bbc67a42dbcbaa6b7f5204e
+Author: zerng07 <pswo10680@gmail.com>
+Date:   Fri Apr 9 03:12:37 2010 -0700
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   16 ++++++++--------
+ 1 files changed, 8 insertions(+), 8 deletions(-)
+
+commit 0c7c919cd232c009cf42c8cd92874e0fe5d30d42
+Author: GLS_ITA <lorenzo.gennaro@ptiglobal.net>
+Date:   Fri Apr 9 01:23:57 2010 -0700
+
+    l10n: Updates to Italian (it) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/it.po |  126 +++++++++++++++++++++++++++++++++++++++++++++-----------------
+ 1 files changed, 92 insertions(+), 34 deletions(-)
+
+commit bc04f0a4564f1f57e40e2f688342966e23910568
+Author: GLS_FRA3 <david.cicognani@ptiglobal.net>
+Date:   Thu Apr 8 23:49:59 2010 -0700
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fr.po |   85 +++++++++++++++++++++++++++++++++++++++++++++++++++++--------
+ 1 files changed, 73 insertions(+), 12 deletions(-)
+
+commit 8b56c8b87799ba228e5fa5fa71990b17da4b5bb8
+Author: Djan <jean.cayron@gmail.com>
+Date:   Thu Apr 8 22:12:57 2010 -0700
+
+    l10n: First wa translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/wa.po |  115 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 115 insertions(+), 0 deletions(-)
+
+commit 1f62d70715a5a39a72914b46cda2f71067288405
+Author: kushylee <>
+Date:   Thu Apr 8 10:54:48 2010 -0700
+
+    l10n: Updates to Korean (ko) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ko.po |   93 +++++++++++++++++++++++++++++++++++++++++++++++++++----------
+ 1 files changed, 77 insertions(+), 16 deletions(-)
+
+commit e44965b9289128bf94e14f7d155def052eb35438
+Author: GLS_DEU1 <clarax.steiner-jay@intel.com>
+Date:   Thu Apr 8 10:50:45 2010 -0700
+
+    l10n: Updates to German (de) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/de.po |    9 ++++-----
+ 1 files changed, 4 insertions(+), 5 deletions(-)
+
+commit f22b113dcb97a910b5e1aa57fc14796b3a501efe
+Author: GLS_DEU1 <clarax.steiner-jay@intel.com>
+Date:   Thu Apr 8 10:49:46 2010 -0700
+
+    l10n: Updates to German (de) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/de.po |   88 ++++++++++++++++++++++++++++++++++++++++----------------------
+ 1 files changed, 57 insertions(+), 31 deletions(-)
+
+commit 1ca062a14db2edf64876009091e82ae116e08c7a
+Author: A Olsson <AnnikaNbpt@gmail.com>
+Date:   Thu Apr 8 02:48:44 2010 -0700
+
+    l10n: Updates to Swedish (sv) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/sv.po |   85 +++++++++++++++++++++++++++++++++++++++++++++++++++++--------
+ 1 files changed, 73 insertions(+), 12 deletions(-)
+
+commit d3f64fc4ee91711df5b6961c8820cc9ce22e8510
+Author: smilex2005 <eija@fascinatingwords.com>
+Date:   Wed Apr 7 19:52:34 2010 -0700
+
+    l10n: Updates to Finnish (fi) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fi.po |   86 +++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 43 insertions(+), 43 deletions(-)
+
+commit 74b1e1d402edb7fc309caaac29299cf0d6df7c15
+Author: smilex2005 <eija@fascinatingwords.com>
+Date:   Wed Apr 7 19:29:37 2010 -0700
+
+    l10n: Updates to Finnish (fi) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fi.po |  107 +++++++++++++++++++++++++++++++++++++++++++++++---------------
+ 1 files changed, 81 insertions(+), 26 deletions(-)
+
+commit b1b30f44979fb9089949b396e5f79720d00306ce
+Author: tomasgalicia <tomas.galicia@intel.com>
+Date:   Wed Apr 7 11:25:21 2010 -0700
+
+    l10n: Updates to Spanish (Castilian) (es) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/es.po |   52 ++++++++++++++++++++++++++--------------------------
+ 1 files changed, 26 insertions(+), 26 deletions(-)
+
+commit 28bb84b69ebb366e4be5502304f6060a8e7a6c6b
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Apr 7 18:21:55 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 53d2e6630f01c1845760c629e44afcff6b766aba
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Apr 7 15:55:29 2010 +0100
+
+    styling: Update to new panel background asset and CSS
+
+ data/theme/panel-background.png |  Bin 3071 -> 267 bytes
+ data/theme/panel.css            |    2 +-
+ 2 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 54bee3ba5a73b35b0d288c0e28532717eabd1e3a
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Apr 7 15:11:54 2010 +0100
+
+    panel-status: Adjust the height of the panel so that is 600 pixels
+    
+    This means that the panel will be basically full height on a netbook (shrunk a
+    bit) and then a fixed height on the nettop. We do this by making a height
+    request rather than tracking the child since then it adapts correctly.
+    
+    This should fix http://bugzilla.meego.com/show_bug.cgi?id=520
+
+ src/moblin-panel-status.c |    8 +++-----
+ 1 files changed, 3 insertions(+), 5 deletions(-)
+
+commit 1e2d181dd35cc394f8121290357297ee5ba91735
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Apr 7 15:10:25 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 6db21397d427771121c3c948a52568b51e5e62c6
+Author: GLS_NLD <albert.dijkstra@ptiglobal.net>
+Date:   Tue Apr 6 18:58:36 2010 -0700
+
+    l10n: Updates to Dutch (Flemish) (nl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/nl.po |   70 ++++++++++++++++++++++++++++++++++++++++++++++---------------
+ 1 files changed, 53 insertions(+), 17 deletions(-)
+
+commit 68b44b900917008d1bd7beff531d6a3ffb971a0c
+Author: GLS_CHS <yunx.nie@intel.com>
+Date:   Tue Apr 6 17:07:53 2010 -0700
+
+    l10n: Updates to Chinese (China) (zh_CN) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_CN.po |  105 ++++++++++++++++++++++++++++++++++++++++++++++++-----------
+ 1 files changed, 86 insertions(+), 19 deletions(-)
+
+commit a803fa4d29805b8c6ca1665bea42c0a402106656
+Author: GLS_ESP <gonzalox.e.velasquez@intel.com>
+Date:   Tue Apr 6 11:31:00 2010 -0700
+
+    l10n: Updates to Spanish (Castilian) (es) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/es.po |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 15a26c39514305bdc3d3321e1651ac055383e87c
+Author: GLS_ESP <gonzalox.e.velasquez@intel.com>
+Date:   Tue Apr 6 11:22:45 2010 -0700
+
+    l10n: Updates to Spanish (Castilian) (es) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/es.po |   93 ++++++++++++++++++++++++++++++++++++++-----------------------
+ 1 files changed, 58 insertions(+), 35 deletions(-)
+
+commit a7d0a5d9eac3fe7a6919ed774de8e17a08a1acc4
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Apr 6 17:30:44 2010 +0100
+
+    styling: Adjust the padding to match new specification
+
+ data/theme/panel.css |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+commit 0ef0d80b4e40c18d1b3ab9c176fc68af2cef3003
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Apr 6 15:54:46 2010 +0100
+
+    styling: Fix asset to have alpha transparency
+
+ data/theme/status_card_background.png |  Bin 126 -> 147 bytes
+ 1 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 017b757bdd2558aa7693be07151b8179be184618
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Apr 6 15:56:11 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 90daddafd9e5bd8e32e5f45b59d33fee1ebeed8e
+Author: Leila <leilaa@abc-lang.com>
+Date:   Tue Apr 6 06:29:24 2010 -0700
+
+    l10n: Updates to Russian (ru) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ru.po |   87 ++++++++++++++++++++++++++++++++++++++++++++++++++++---------
+ 1 files changed, 74 insertions(+), 13 deletions(-)
+
+commit cc0a68b2b4bc50ffc960f654e5737de1cd7abac8
+Author: promuald <info@transsoft.pl>
+Date:   Tue Apr 6 05:01:46 2010 -0700
+
+    l10n: Updates to Polish (pl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pl.po |   83 +++++++++++++++++++++++++++++++++++++++++++++++++++++++------
+ 1 files changed, 74 insertions(+), 9 deletions(-)
+
+commit a9cbe336867641b7e5d4603575b18580a7698188
+Author: Takashi <takashi.kazami@novuscom.net>
+Date:   Tue Apr 6 01:01:23 2010 -0700
+
+    l10n: Updates to Japanese (ja) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ja.po |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 73c3a3157c47668cdb748a79ade6d8fe920ec890
+Author: Takashi <takashi.kazami@novuscom.net>
+Date:   Tue Apr 6 00:56:22 2010 -0700
+
+    l10n: Updates to Japanese (ja) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ja.po |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit d7fadf3788216b72dff49b4c3b01e92b9fb0169a
+Author: Takashi <takashi.kazami@novuscom.net>
+Date:   Tue Apr 6 00:14:27 2010 -0700
+
+    l10n: Updates to Japanese (ja) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ja.po |   89 ++++++++++++++++++++++++++++++++++++++++++++++++++++----------
+ 1 files changed, 75 insertions(+), 14 deletions(-)
+
+commit 329b41f222d8f22475eccad98b29e7a86e64363b
+Author: GLS_PTB <gaborx.k.becht@intel.com>
+Date:   Mon Apr 5 14:27:53 2010 -0700
+
+    l10n: Updates to Brazilian Portuguese (pt_BR) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pt_BR.po |  123 +++++++++++++++++++++++++++++++++++++++++++----------------
+ 1 files changed, 90 insertions(+), 33 deletions(-)
+
+commit 4180fbaf5054e19756ba263ddd61bfffcf13ac2c
+Author: zerng07 <pswo10680@gmail.com>
+Date:   Sun Apr 4 01:38:14 2010 -0700
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   56 +++++++++++++++++++++++++++++++++++++++++---------------
+ 1 files changed, 41 insertions(+), 15 deletions(-)
+
+commit d6817341eb0ee6093b212b52a05a686563da9b3e
+Author: andika <andika@gmail.com>
+Date:   Sat Apr 3 06:23:30 2010 -0700
+
+    l10n: Updates to Indonesian (id) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/id.po |   32 +++++++++++++++++++++++++-------
+ 1 files changed, 25 insertions(+), 7 deletions(-)
+
+commit a7138680704d02c6cf601cda1d4d1947c3f1c32e
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Apr 1 19:23:56 2010 +0100
+
+    panel-status: Add placeholder text
+
+ src/moblin-panel-status.c |    5 +++++
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+
+commit 79666c967064fd078feaa29e79aa360f4ab953c5
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Apr 1 19:12:29 2010 +0100
+
+    styling: First pass at new styling
+
+ data/theme/Makefile.am                  |    5 +++-
+ data/theme/add_status_header.png        |  Bin 306 -> 333 bytes
+ data/theme/add_status_header_hover.png  |  Bin 2994 -> 436 bytes
+ data/theme/alt_status_header.png        |  Bin 321 -> 476 bytes
+ data/theme/alt_status_header_hover.png  |  Bin 0 -> 605 bytes
+ data/theme/content-panel-background.png |  Bin 0 -> 498 bytes
+ data/theme/current_status_header.png    |  Bin 307 -> 589 bytes
+ data/theme/panel-background.png         |  Bin 0 -> 3071 bytes
+ data/theme/panel.css                    |   43 +++++++++++++++++++++---------
+ src/moblin-panel-status.c               |   24 ++++++++++++++++-
+ 10 files changed, 56 insertions(+), 16 deletions(-)
+
+commit 27caef9dee1591a204e2c651a634a9de3787676d
+Author: zerng07 <pswo10680@gmail.com>
+Date:   Thu Apr 1 08:05:23 2010 -0700
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   30 +++++++++++++++++-------------
+ 1 files changed, 17 insertions(+), 13 deletions(-)
+
+commit 2b7e898e87f703d038feb0f1b6bfb064236e452e
+Author: andika <andika@gmail.com>
+Date:   Wed Mar 31 14:14:57 2010 -0700
+
+    l10n: Updates to Indonesian (id) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/id.po |   63 +++++++++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 36 insertions(+), 27 deletions(-)
+
+commit 0246da7ac1e37a7544269bf10db3a70714d70190
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Mar 31 16:08:06 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit d820246aa77b0857867e6b5f8336f6e4e41e2a60
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Mar 31 15:59:51 2010 +0100
+
+    po: Update POTFILES.in
+
+ po/POTFILES.in |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 27e474ab83bc884e1e8ee537e2d476412c936f71
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Mar 31 15:57:58 2010 +0100
+
+    tweet-card: Fix build (include necessary header)
+
+ src/mps-tweet-card.c |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 7657db33bb59d7faf2472cbe6a1be663abb20f02
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Mar 26 18:17:13 2010 +0000
+
+    feed-switcher: Port to new MxNotebook API
+
+ src/mps-feed-switcher.c |    8 ++------
+ 1 files changed, 2 insertions(+), 6 deletions(-)
+
+commit e3c3d6c5c5c8abd898b74d3c320ed6c43739c1c9
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Mar 29 17:31:18 2010 +0100
+
+    tweet-card: Expose full name of place in the details
+    
+    If a tweet has geocoded geotag information from Twitter then we include that
+    in the details string for the tweet.
+
+ src/mps-tweet-card.c |   25 ++++++++++++++++++++++---
+ 1 files changed, 22 insertions(+), 3 deletions(-)
+
+commit bb315e1ac05e3853ca4f5498d9caca2ec8ca8ca8
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Mar 29 14:26:47 2010 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit a58e431820d8496212ec404390b1a19d1296a814
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Mar 29 13:32:39 2010 +0100
+
+    build: Include sw-marshals.list in the EXTRA_DIST
+
+ src/Makefile.am |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit e49ae9ef429b8135f139bb07e435033e75681aae
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Mar 29 13:18:37 2010 +0100
+
+    feed-pane: Adjust status message to consider whether we are online/offline
+    
+    Fixes bug: http://bugzilla.meego.com/show_bug.cgi?id=90
+
+ src/mps-feed-pane.c |   43 ++++++++++++++++++++++++++++++++++++++++---
+ 1 files changed, 40 insertions(+), 3 deletions(-)
+
+commit 307e0bb6eb2129f32257c0e3042a809ff431e010
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Mar 29 11:56:03 2010 +0100
+
+    online: Import online/offline tracking from libsocialweb
+
+ configure.ac         |   28 +++++
+ src/Makefile.am      |   13 ++-
+ src/sw-marshals.list |    1 +
+ src/sw-online.c      |  289 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/sw-online.h      |   38 +++++++
+ 5 files changed, 367 insertions(+), 2 deletions(-)
+
+commit 07284d5f0ff7ac59cfdfca6864e4200c6abc48b2
+Author: GLS_DEU <andreasx.machoy@intel.com>
+Date:   Sun Mar 28 03:41:02 2010 -0700
+
+    l10n: Updates to German (de) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/de.po |  112 +++++++++++++++++++++++++++++++++++++++++---------------------
+ 1 files changed, 74 insertions(+), 38 deletions(-)
+
+commit 7f691b6544ef50148746aa58c50f17f94959dcd6
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Mar 26 18:11:42 2010 +0000
+
+    feed-pane: Hide/show the location tagging based on can-geotag dynamic cap
+
+ src/mps-feed-pane.c |   28 +++++++---------------------
+ 1 files changed, 7 insertions(+), 21 deletions(-)
+
+commit bd60b1bc3e3d2f2f2a395522f4a987a77ec639bd
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Mar 25 19:11:23 2010 +0000
+
+    build: Remove old geotag pane test
+
+ src/Makefile.am |    9 ---------
+ 1 files changed, 0 insertions(+), 9 deletions(-)
+
+commit f7d874d496f774364db28563aa6850fc392acd84
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Mar 25 19:00:23 2010 +0000
+
+    feed-switcher: Make "Add new web service" launch inside unified shell
+    
+    This fixes: http://bugzilla.meego.com/show_bug.cgi?id=92
+
+ src/mps-feed-switcher.c |   28 +++++++++++++++++++---------
+ 1 files changed, 19 insertions(+), 9 deletions(-)
+
+commit 8f476b8ee65cbe220454b76ae2c9fedd8a22e827
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Mar 25 16:03:05 2010 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 79cf19c61f122dfd10b7f68ba10317fe36998445
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Mar 25 15:51:05 2010 +0000
+
+    Port to latest MX
+
+ configure.ac          |    2 +-
+ src/mps-geotag-pane.c |    2 +-
+ src/mps-tweet-card.c  |    6 +++---
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 75f81abc418f86ca19853cce46bf1f59ca80f87a
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Mar 25 15:58:49 2010 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 5ef0d32b5b9b9b442f18c436fd812d81848d037b
+Author: auke <auke-jan.h.kok@intel.com>
+Date:   Wed Mar 24 11:10:45 2010 -0700
+
+    l10n: Updates to Dutch (Flemish) (nl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/nl.po |   58 ++++++++++++++++++++++++++++++++++++++++++++++++++--------
+ 1 files changed, 50 insertions(+), 8 deletions(-)
+
+commit afab15608711d52431e7ee9e2fc6e114e8f6d444
+Author: tomasgalicia <tomas.galicia@intel.com>
+Date:   Mon Mar 22 11:02:36 2010 -0700
+
+    l10n: Updates to Spanish (Castilian) (es) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/es.po |   66 +++++++++++++++++++++++++++++++++++++++++++++++++------------
+ 1 files changed, 53 insertions(+), 13 deletions(-)
+
+commit 8ecef2d74b42721041128a3e4f67062b9042bf86
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Mar 22 15:18:56 2010 +0000
+
+    Port to latest MX
+
+ src/mps-feed-pane.c     |   12 ++++++------
+ src/mps-feed-switcher.c |   12 ++++++------
+ src/mps-geotag-pane.c   |   22 +++++++++++-----------
+ src/mps-tweet-card.c    |    9 +++++----
+ 4 files changed, 28 insertions(+), 27 deletions(-)
+
+commit c9ef3ab81e38376809f4cf9e014360d51fb0f404
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Mar 19 20:19:36 2010 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit a6720dd8e527ea3d389d4326641dbda480fbc53d
+Author: andika <andika@gmail.com>
+Date:   Sun Mar 21 22:39:14 2010 -0700
+
+    l10n: Updates to Indonesian (id) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/id.po |  106 +++++++++++++++++++++++++++++++++++++++++---------------------
+ 1 files changed, 70 insertions(+), 36 deletions(-)
+
+commit 32f7abb5dc319fd6fb9821a680c45c67746b208f
+Author: zerng07 <pswo10680@gmail.com>
+Date:   Sun Mar 21 02:27:14 2010 -0700
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |  101 ++++++++++++++++++++++++++++++++++++++--------------------
+ 1 files changed, 66 insertions(+), 35 deletions(-)
+
+commit 60a8f4b1baae488271ce4e7448efbefade498236
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Mar 19 20:11:58 2010 +0000
+
+    po: Add new file to POTFILES.in
+
+ po/POTFILES.in |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 5ca0b5b41f0aaa7655f35275cdc741c40e41d30d
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Mar 19 12:25:36 2010 +0000
+
+    feed-pane: Only show location/geotag UI if the static capability is available
+
+ src/mps-feed-pane.c |   25 +++++++++++++++++++++++++
+ 1 files changed, 25 insertions(+), 0 deletions(-)
+
+commit 8d6652d2307ff90323c41b297a7e45366d947bfe
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Mar 4 15:43:23 2010 +0000
+
+    feed-pane: Include geotag latitude and longitude along with the tweet
+
+ src/mps-feed-pane.c |   54 ++++++++++++++++++++++++++++++++++++--------------
+ 1 files changed, 39 insertions(+), 15 deletions(-)
+
+commit ab2485bd1f22874c57896b0df4a201b27a9d4c3e
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Mar 4 14:07:18 2010 +0000
+
+    styling: Tweak styling for geotag integration
+
+ data/theme/Makefile.am         |    3 +-
+ data/theme/location-box-bg.png |  Bin 0 -> 151 bytes
+ data/theme/panel.css           |   42 ++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 44 insertions(+), 1 deletions(-)
+
+commit a527dff26fb4744b884af1fd0c7f4a44c9a906ca
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Mar 4 14:06:33 2010 +0000
+
+    geotag-pane: Increase spacing between UI elements
+
+ src/mps-geotag-pane.c |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit 0842be5f5fbd54d937dc12575fd2c84ec45e18c5
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Mar 4 14:06:08 2010 +0000
+
+    feed-pane: Set some style class names for widgets
+
+ src/mps-feed-pane.c |    6 ++++++
+ 1 files changed, 6 insertions(+), 0 deletions(-)
+
+commit 8968220586c8e55bcc2bbc9f0d8f0caf2e869f80
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Mar 3 00:13:11 2010 +0000
+
+    Add first pass at geotagging integration
+
+ configure.ac          |    5 +-
+ src/Makefile.am       |   14 +-
+ src/mps-feed-pane.c   |  115 +++++++++-
+ src/mps-geotag-pane.c |  654 +++++++++++++++++++++++++++++++++++++++++++++++++
+ src/mps-geotag-pane.h |   58 +++++
+ 5 files changed, 842 insertions(+), 4 deletions(-)
+
+commit a4282532b32bedc456688d8f6e43eadec8daf506
+Author: andika <andika@gmail.com>
+Date:   Fri Mar 19 05:49:17 2010 -0700
+
+    l10n: Updates to Indonesian (id) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/id.po |  153 +++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 76 insertions(+), 77 deletions(-)
+
+commit 059a0b6672db341c09e16cefa1915cf7069dc8fa
+Author: A Olsson <AnnikaNbpt@gmail.com>
+Date:   Thu Mar 18 11:17:39 2010 -0700
+
+    l10n: Updates to Swedish (sv) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/sv.po |  162 ++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 85 insertions(+), 77 deletions(-)
+
+commit 0b0c03ffef72bf11808b24b383e48a699cb70163
+Author: niala <alainswb@free.fr>
+Date:   Tue Mar 16 05:14:29 2010 -0700
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fr.po |   24 ++++++++++++------------
+ 1 files changed, 12 insertions(+), 12 deletions(-)
+
+commit f56723674c14b0f8418fd597fb661aeadde1ae04
+Author: promuald <info@transsoft.pl>
+Date:   Wed Mar 10 12:47:41 2010 -0800
+
+    l10n: Updates to Polish (pl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pl.po |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit d49577095862529524713331016b5c7b4f19d779
+Author: Leila <leilaa@abc-lang.com>
+Date:   Tue Mar 9 01:41:29 2010 -0800
+
+    l10n: Translated Russian file.
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ru.po |  153 +++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 78 insertions(+), 75 deletions(-)
+
+commit 011f35d90d49e44140dac4449bff8168430b22b6
+Author: kushylee <>
+Date:   Mon Mar 8 15:18:01 2010 -0800
+
+    l10n: Updates to Korean (ko) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ko.po |  155 +++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 78 insertions(+), 77 deletions(-)
+
+commit 0f68d92027739074a2bf119916b7386ba515c942
+Author: smilex2005 <eija@fascinatingwords.com>
+Date:   Mon Mar 8 08:19:25 2010 -0800
+
+    l10n: Updates to Finnish (fi) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fi.po |  163 ++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 85 insertions(+), 78 deletions(-)
+
+commit 0687da5dfe7e06694a063d1f118c243526bb7bb3
+Author: GLS_PTB <gaborx.k.becht@intel.com>
+Date:   Thu Mar 4 09:19:03 2010 -0800
+
+    l10n: Updates to Brazilian Portuguese (pt_BR) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pt_BR.po |   24 ++++++++++++------------
+ 1 files changed, 12 insertions(+), 12 deletions(-)
+
+commit c6393c8ff86bc325d02bb514d60059d47d3aff2c
+Author: Takashi <takashi.kazami@novuscom.net>
+Date:   Wed Mar 3 21:54:40 2010 -0800
+
+    l10n: Updates to Japanese (ja) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ja.po |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 33be5b683e72ba357c8c49b46beb733cf34a1864
+Author: GLS_CHT <wen.hsinx.moh@intel.com>
+Date:   Wed Mar 3 19:09:55 2010 -0800
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit ec24612dae8813f38873540e8c536ac47e247742
+Author: GLSQA <namfonx.yeates@intel.com>
+Date:   Wed Mar 3 18:36:54 2010 -0800
+
+    l10n: Updates to Italian (it) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/it.po |   24 ++++++++++++------------
+ 1 files changed, 12 insertions(+), 12 deletions(-)
+
+commit 34fd63bf33f46e6129f2db10b1777a2d87077c20
+Author: GLS_CHS <yunx.nie@intel.com>
+Date:   Wed Mar 3 18:27:22 2010 -0800
+
+    l10n: Updates to Chinese (China) (zh_CN) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_CN.po |   24 ++++++++++++------------
+ 1 files changed, 12 insertions(+), 12 deletions(-)
+
+commit 95ab411666e474dd305fcade6a8457cc985944ec
+Author: GLSQA <namfonx.yeates@intel.com>
+Date:   Wed Mar 3 17:52:01 2010 -0800
+
+    l10n: Updates to Dutch (Flemish) (nl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/nl.po |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 19e32d914c7dcee0c44606765c6deacb7dad6f71
+Author: GLSQA <namfonx.yeates@intel.com>
+Date:   Wed Mar 3 17:42:32 2010 -0800
+
+    l10n: Updates to Dutch (Flemish) (nl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/nl.po |   24 +++++-------------------
+ 1 files changed, 5 insertions(+), 19 deletions(-)
+
+commit b15c33b7cbfbc858c63b7b8049c205a12437e226
+Author: GLS_CHT <wen.hsinx.moh@intel.com>
+Date:   Wed Mar 3 16:05:25 2010 -0800
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |  153 ++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 78 insertions(+), 75 deletions(-)
+
+commit 1003323482c7037dbd2b4aef35b1e8a5c6345d14
+Author: GLS_DEU1 <clarax.steiner-jay@intel.com>
+Date:   Wed Mar 3 10:20:28 2010 -0800
+
+    l10n: Updates to German (de) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/de.po |  156 ++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 77 insertions(+), 79 deletions(-)
+
+commit d4f2e6fa70d3a084268856ab19e99f69c8d47751
+Author: GLS_FRA3 <david.cicognani@ptiglobal.net>
+Date:   Tue Mar 2 22:55:19 2010 -0800
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fr.po |  147 ++++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 76 insertions(+), 71 deletions(-)
+
+commit 5c03d835a30c18338d13d75d926ce1b9df63a293
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Sat Feb 13 16:11:19 2010 +0000
+
+    feed-pane: Tweak something is wrong message
+
+ src/mps-feed-pane.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 45f69324d313c5992777d1041252f6047c2ba6a5
+Author: GLS_NLD <albert.dijkstra@ptiglobal.net>
+Date:   Tue Mar 2 15:58:32 2010 -0800
+
+    l10n: Updates to Dutch (Flemish) (nl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/nl.po |  166 ++++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 86 insertions(+), 80 deletions(-)
+
+commit 06e51811f3e90a3845b928b5712bbc80ab3666f4
+Author: GLSQA <namfonx.yeates@intel.com>
+Date:   Tue Mar 2 13:26:28 2010 -0800
+
+    l10n: Updates to Spanish (Castilian) (es) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/es.po |  120 ++++++++++++++++++++++---------------------------------------
+ 1 files changed, 43 insertions(+), 77 deletions(-)
+
+commit 274a18752cc3178945d14f81c08dc079ac061681
+Author: GLS_ITA <lorenzo.gennaro@ptiglobal.net>
+Date:   Tue Mar 2 11:20:26 2010 -0800
+
+    l10n: Updates to Italian (it) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/it.po |  157 ++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 77 insertions(+), 80 deletions(-)
+
+commit 67a001b5a9e35379dab51eab54e3e4467f16d440
+Author: GLS_CHS <yunx.nie@intel.com>
+Date:   Tue Mar 2 10:52:47 2010 -0800
+
+    l10n: Updates to Chinese (China) (zh_CN) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_CN.po |  147 ++++++++++++++++++++++++++++++----------------------------
+ 1 files changed, 76 insertions(+), 71 deletions(-)
+
+commit f93f29a1c87f57a74e2198ac6c367ea8d0da03cb
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Feb 24 11:27:09 2010 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 3649b173831aff6a95cf847b6aa959024a3048c4
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Feb 24 11:26:05 2010 +0000
+
+    styling: Update to new property names
+
+ data/theme/panel.css |    8 ++++----
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 441a8d678ab9508151729bf4d981776f66ac33e2
+Author: promuald <info@transsoft.pl>
+Date:   Sun Feb 28 12:14:22 2010 -0800
+
+    l10n: Updates to Polish (pl) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pl.po |  110 ++++++++++++++++----------------------------------------------
+ 1 files changed, 28 insertions(+), 82 deletions(-)
+
+commit c9e5dc571257479b7e8f2729f425c6aff986299e
+Author: GLS_PTB <gaborx.k.becht@intel.com>
+Date:   Wed Feb 24 16:33:09 2010 -0800
+
+    l10n: Updates to Brazilian Portuguese (pt_BR) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pt_BR.po |  157 +++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 78 insertions(+), 79 deletions(-)
+
+commit be3b40ace8b10b16ce7d246834f1640bb866c662
+Author: Takashi <takashi.kazami@novuscom.net>
+Date:   Tue Feb 23 18:00:17 2010 -0800
+
+    l10n: Updates to Japanese (ja) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ja.po |  166 ++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 87 insertions(+), 79 deletions(-)
+
+commit 011e8ea21b1b86105ec3f78c9e59f1ae36a65f2b
+Author: margie <margie.foster@intel.com>
+Date:   Tue Feb 23 15:47:56 2010 -0800
+
+    l10n: Updates to English (United Kingdom) (en_GB) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/en_GB.po |  163 ++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 78 insertions(+), 85 deletions(-)
+
+commit c77de1841c538d279b24ad5e1cdae2c58af17e8f
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Feb 22 16:38:18 2010 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 861f87247bd7e86c471b543869444d32290ff053
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Feb 22 16:32:41 2010 +0000
+
+    build: Remove telepathy-glib pkg-config dep
+
+ configure.ac |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+commit 977244ff63d638123af00f7bee2fa10d321c173c
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Feb 22 16:03:03 2010 +0000
+
+    feed-pane: Hook up reply/retweet buttons to pre-fill the entry
+
+ src/mps-feed-pane.c |   67 ++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 files changed, 66 insertions(+), 1 deletions(-)
+
+commit b7c8e59bcdfd902bbb365277321bce04310e13e3
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Feb 22 16:02:30 2010 +0000
+
+    tweet-card: Add reply/retweet buttons
+
+ data/theme/Makefile.am     |    7 +++-
+ data/theme/panel.css       |   47 ++++++++++++++++++++
+ data/theme/retweet.png     |  Bin 574 -> 523 bytes
+ data/theme/tweet-reply.png |  Bin 434 -> 399 bytes
+ src/mps-tweet-card.c       |  105 +++++++++++++++++++++++++++++++++++++++++++-
+ 5 files changed, 157 insertions(+), 2 deletions(-)
+
+commit a231525bc3c35619f1490b0800bf6b4bf964282a
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Feb 22 15:34:04 2010 +0000
+
+    tweet-card: Show the metadata for the tweets
+
+ src/mps-tweet-card.c |   13 +++++++++++--
+ 1 files changed, 11 insertions(+), 2 deletions(-)
+
+commit 38ac46c587f6dc8553143417bb2c17eb97a3e0dc
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Feb 22 14:52:12 2010 +0000
+
+    styling: Adjust primary/secondary font label styling
+
+ data/theme/panel.css |    6 ++----
+ 1 files changed, 2 insertions(+), 4 deletions(-)
+
+commit c541e57d212ba0fdc9f0742d357d707a8158ec0b
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Feb 22 13:38:41 2010 +0000
+
+    view-bridge: Add a factory function to the bridge
+
+ src/mps-view-bridge.c |   26 +++++++++++++++++++++++---
+ src/mps-view-bridge.h |    6 ++++++
+ 2 files changed, 29 insertions(+), 3 deletions(-)
+
+commit 841bd700f676c751c84e5bc410bcb26779f37f3b
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Feb 22 13:36:49 2010 +0000
+
+    styling/view-bridge: Adjust padding / height of tiles
+
+ data/theme/panel.css  |    2 +-
+ src/mps-view-bridge.c |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 8be0bdb4aabfd15bce8768f99b3bc75f9b741e90
+Author: Hylke Bons <hylke.bons@intel.com>
+Date:   Fri Feb 19 15:12:10 2010 +0000
+
+    Tweet icons.
+
+ data/theme/icon-bg-hover.png     |  Bin 0 -> 276 bytes
+ data/theme/retweet-hover.png     |  Bin 0 -> 659 bytes
+ data/theme/retweet.png           |  Bin 0 -> 574 bytes
+ data/theme/tweet-reply-hover.png |  Bin 0 -> 481 bytes
+ data/theme/tweet-reply.png       |  Bin 0 -> 434 bytes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 9405b201191f1856df9e779b0587f31d050ac8a4
+Author: Nick Richards <nicholas.e.richards@intel.com>
+Date:   Mon Feb 15 15:12:30 2010 +0000
+
+    add meego avatar icon
+
+ data/theme/avatar_icon.png |  Bin 1314 -> 904 bytes
+ 1 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 869849ede32b5e998f5dc7d8bb0f49753e1f4175
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Feb 12 12:10:51 2010 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit e0f7062b433c0a67a79ff050445b3ed34a1e2912
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Feb 12 12:04:40 2010 +0000
+
+    feed-pane: MplEntry doesn't let you clear the text by setting it to NULL
+
+ src/mps-feed-pane.c |    4 +++-
+ 1 files changed, 3 insertions(+), 1 deletions(-)
+
+commit d5685c61c340f270958d3c8067dcf0b6663ef722
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Feb 12 12:06:03 2010 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit ea235e11709192f1df07d550f1b05773296a4dfb
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Feb 12 11:26:21 2010 +0000
+
+    feed-pane: Switch to using an MplEntry for the status update box
+
+ data/theme/panel.css |   11 +++--------
+ src/mps-feed-pane.c  |   34 ++++++++++++----------------------
+ 2 files changed, 15 insertions(+), 30 deletions(-)
+
+commit 9ebe0ce2a6514af7012c71b49fa00a750bdec41c
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 11 14:57:44 2010 +0000
+
+    styling: Add spacing to the left and right of panel contents
+
+ data/theme/panel.css |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit f5585e6c17afeb79403043ca9b0623cb23602214
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Feb 10 19:09:20 2010 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 36ee3fb8c6e0b1e4d7c82b05af61474c003a0a12
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Feb 10 19:06:40 2010 +0000
+
+    feed-switcher: Adjust position of placeholder
+
+ src/mps-feed-switcher.c |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+commit f1b1437a96cdfb3cb79684e7ced6b7dab3dcd76c
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Feb 10 19:02:38 2010 +0000
+
+    feed-switcher: Adjust placeholder text
+
+ src/mps-feed-switcher.c |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 000e9195c19ad4bebdfe18b2266748f1c74e1d19
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Feb 10 18:45:27 2010 +0000
+
+    styling: Adjust styling for hover states on all switcher buttons
+
+ data/theme/Makefile.am             |    1 +
+ data/theme/panel.css               |   16 +++++++++-------
+ data/theme/status_header_hover.png |  Bin 0 -> 3014 bytes
+ 3 files changed, 10 insertions(+), 7 deletions(-)
+
+commit 5b7999ff43e752a920e509e9ce16c9bd9948d13b
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Feb 10 18:36:47 2010 +0000
+
+    panel-status: Adjust height to 500
+
+ src/moblin-panel-status.c |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 21f449336d0588376ad0950ba314fc974699a402
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Feb 10 18:35:04 2010 +0000
+
+    styling: Add a hover state to the add service button
+
+ data/theme/Makefile.am                 |    1 +
+ data/theme/add_status_header_hover.png |  Bin 0 -> 2994 bytes
+ data/theme/panel.css                   |    9 +++++++++
+ 3 files changed, 10 insertions(+), 0 deletions(-)
+
+commit a55afcfd423df0b6c641b118cf0db50230ad1b02
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Feb 10 17:42:00 2010 +0000
+
+    panel-status: Add COGL debug options to command line options
+
+ src/moblin-panel-status.c |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 7afe010da1a9de7f245beca2696640977c6f8352
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Feb 10 17:40:03 2010 +0000
+
+    view-bridge: Reduce animation threshold count to 5
+
+ src/mps-view-bridge.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit f367ebf0cf67e045baf89b2ec8f270f0f5cb09ae
+Author: Robert Staudinger <robert.staudinger@intel.com>
+Date:   Wed Feb 10 17:14:43 2010 +0100
+
+    build: Add 'ACLOCAL_AMFLAGS = -I m4' to toplevel Makefile.am
+
+ Makefile.am |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+commit bd7b45246c3561fc2c3947efba1336cd8c9a902d
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Feb 5 14:55:58 2010 +0000
+
+    build: Post-release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit e0239e54f22740b8f5e9a1191a18274fb60392e9
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 23:53:54 2010 +0000
+
+    Remove nbtk-1.2 from pkg-config entries
+
+ configure.ac |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+commit 17bc54b90b0f42dbe72ff3096c84faeee0119c33
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 23:51:27 2010 +0000
+
+    build: Post-release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit cb23aa04eb4d79fef074d3f4bb78b6b185aa957b
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 23:47:29 2010 +0000
+
+    tweet-card: Make the button clickable to start the browser
+
+ src/mps-tweet-card.c |   36 ++++++++++++++++++++++++++++++++++++
+ 1 files changed, 36 insertions(+), 0 deletions(-)
+
+commit a90e4804224ba993d8fe8b5dde86e374d9ab10b6
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 23:46:57 2010 +0000
+
+    feed-switcher: Hide the panel when the new service button is pressed.
+
+ src/mps-feed-switcher.c |    5 +++++
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+
+commit 5e28151035bad57f199aa067843b22edf07840e6
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 23:46:40 2010 +0000
+
+    po: Update POTFILES.in
+
+ po/POTFILES.in |    5 ++---
+ 1 files changed, 2 insertions(+), 3 deletions(-)
+
+commit 48ca3928a2f52898dbb0b2bc63cc1b8bb21a1485
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 23:46:22 2010 +0000
+
+    panel-status: Add call to allow hiding the panel
+
+ src/moblin-panel-status.c |   13 ++++++++++++-
+ 1 files changed, 12 insertions(+), 1 deletions(-)
+
+commit a57e58270fea737887712a2bc469c107e822338b
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 23:06:37 2010 +0000
+
+    feed-pane: Make the status not working message nicer.
+
+ src/mps-feed-pane.c |    7 +++----
+ 1 files changed, 3 insertions(+), 4 deletions(-)
+
+commit 87105950559a74f23d6ec8bfcff9f75199ca9350
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 22:56:49 2010 +0000
+
+    feed-pane: Show a message if we don't have the can-update-status dynamic cap
+
+ data/theme/panel.css |    7 +++-
+ src/mps-feed-pane.c  |   84 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 90 insertions(+), 1 deletions(-)
+
+commit acea1279bb625b3f5ec68f407e22d4dbce33eac3
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 22:53:54 2010 +0000
+
+    feed-switcher: Filter out to services that have the dynamic is-configured cap
+
+ src/mps-feed-switcher.c |   12 ++++++------
+ 1 files changed, 6 insertions(+), 6 deletions(-)
+
+commit 44c1d9a01d5de98a26a499e87b69fcd57f89f602
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 21:22:08 2010 +0000
+
+    feed-switcher: Fix build warnings
+
+ src/mps-feed-switcher.c |    5 +++--
+ 1 files changed, 3 insertions(+), 2 deletions(-)
+
+commit cd09b4245393625fafd44f49d1e5a45a08357e46
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 18:42:06 2010 +0000
+
+    feed-switcher: If the caps are empty then it can't contain the given cap.
+
+ src/mps-feed-switcher.c |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+commit cbfe40ffc3c8dee4d491eaf3a48ef291f4ccddb6
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 18:22:13 2010 +0000
+
+    feed-pane: Make the entry send the status update on activate
+
+ src/mps-feed-pane.c |   26 +++++++++++++++++++++++---
+ 1 files changed, 23 insertions(+), 3 deletions(-)
+
+commit eb019af786d750739916ca8e8b00158ae0fc8ea5
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 17:51:05 2010 +0000
+
+    feed-switcher: Hook up new service button to startup bisho
+
+ src/mps-feed-switcher.c |   26 ++++++++++++++++++++++++++
+ 1 files changed, 26 insertions(+), 0 deletions(-)
+
+commit 912b18feae0fec3f9b7463121e0b956230cd7843
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 17:33:44 2010 +0000
+
+    feed-switcher: Enhance placeholder text and styling
+
+ data/theme/panel.css    |    6 ++++++
+ src/mps-feed-switcher.c |   10 ++++++++--
+ 2 files changed, 14 insertions(+), 2 deletions(-)
+
+commit 3cd37f4d2347a217bb38136b2a20416c8a5c7a61
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Feb 4 17:25:24 2010 +0000
+
+    data: Add missing asset to build repository
+
+ data/theme/avatar_frame.png |  Bin 0 -> 2985 bytes
+ 1 files changed, 0 insertions(+), 0 deletions(-)
+
+commit c00a3ceb08d89eb0c765bed660d95063a8790322
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 18:57:27 2010 +0000
+
+    theme: Update stylesheet to include styling
+
+ data/theme/panel.css |   91 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 91 insertions(+), 0 deletions(-)
+
+commit 7cce122168cddbf8403549a155db97283d552645
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 18:25:59 2010 +0000
+
+    feed-switcher: Remove spurious debugging
+
+ src/mps-feed-switcher.c |    5 -----
+ 1 files changed, 0 insertions(+), 5 deletions(-)
+
+commit 9f717962d33fcbd4ed23abd566c68af4c2ed459c
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 18:25:20 2010 +0000
+
+    feed-pane: Set some row spacing between the entry box and the body
+
+ src/mps-feed-pane.c |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+commit 088faab0e71a2361a88100e22f8aeef9eb551502
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 17:40:06 2010 +0000
+
+    theme: Add background for status update card
+
+ data/theme/Makefile.am                |    3 ++-
+ data/theme/status_card_background.png |  Bin 0 -> 126 bytes
+ 2 files changed, 2 insertions(+), 1 deletions(-)
+
+commit cc3629e59f892d9437c04f5c4405a331e0666b98
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 17:15:51 2010 +0000
+
+    feed-pane: Fix style class names
+
+ src/mps-feed-pane.c |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 921aa4a8e12a6d1179b5355b29ee6cecdca18375
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 17:07:07 2010 +0000
+
+    feed-switcher: Add spacing between buttons
+
+ src/mps-feed-switcher.c |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+commit 5c1fcb72e7ab702f18b2ff73ada212fece32afca
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 16:57:11 2010 +0000
+
+    feed-switcher: Expand the buttons to fill up the button box
+
+ src/mps-feed-switcher.c |    8 ++++++++
+ 1 files changed, 8 insertions(+), 0 deletions(-)
+
+commit 78bf9f867a6b6a26b33d3b6fa5e49dc6fa7c8859
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 16:50:18 2010 +0000
+
+    feed-switcher: Fix style class name for add service button
+
+ src/mps-feed-switcher.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 651b3ab6fd5d5c4fc85c8cec235dbeafeedbbe85
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 16:32:18 2010 +0000
+
+    tweet-card: Add some column spacing
+
+ src/mps-tweet-card.c |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+commit c45614b5565ad06d0f6766e15fbd562c4f326c7f
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 16:15:26 2010 +0000
+
+    tweet-card: Tweak name of style classes
+
+ src/mps-tweet-card.c |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 23367edbed3ba251366b83f9cc980744c5f43652
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 16:15:00 2010 +0000
+
+    theme: Update assets
+
+ data/theme/Makefile.am               |   24 ++++++------------------
+ data/theme/add_status_header.png     |  Bin 0 -> 306 bytes
+ data/theme/alt_status_header.png     |  Bin 0 -> 321 bytes
+ data/theme/avatar-bg.png             |  Bin 651 -> 0 bytes
+ data/theme/avatar_icon.png           |  Bin 0 -> 1314 bytes
+ data/theme/current_status_header.png |  Bin 0 -> 307 bytes
+ data/theme/decoration-frame.png      |  Bin 3163 -> 0 bytes
+ data/theme/edit_close.png            |  Bin 2977 -> 0 bytes
+ data/theme/edit_close_hover.png      |  Bin 3269 -> 0 bytes
+ data/theme/entry-frame-edit.png      |  Bin 467 -> 0 bytes
+ data/theme/entry-frame-hover.png     |  Bin 489 -> 0 bytes
+ data/theme/im-available.png          |  Bin 577 -> 0 bytes
+ data/theme/im-away.png               |  Bin 666 -> 0 bytes
+ data/theme/im-busy.png               |  Bin 597 -> 0 bytes
+ data/theme/im-offline.png            |  Bin 639 -> 0 bytes
+ data/theme/launcher-button-bg.png    |  Bin 463 -> 0 bytes
+ data/theme/minus-button-hover.png    |  Bin 503 -> 0 bytes
+ data/theme/minus-button.png          |  Bin 437 -> 0 bytes
+ data/theme/no_image_icon.png         |  Bin 554 -> 0 bytes
+ data/theme/placeholder-bg.png        |  Bin 151 -> 0 bytes
+ data/theme/plus-button-hover.png     |  Bin 567 -> 0 bytes
+ data/theme/plus-button.png           |  Bin 518 -> 0 bytes
+ data/theme/status_entry_box.png      |  Bin 0 -> 356 bytes
+ 23 files changed, 6 insertions(+), 18 deletions(-)
+
+commit 406ce426cb691c9b22e890c8b4a6af207362a4f6
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 15:29:00 2010 +0000
+
+    moblin-panel-status: Use new feed switcher
+
+ src/moblin-panel-status.c |    6 +++++-
+ 1 files changed, 5 insertions(+), 1 deletions(-)
+
+commit a29049fb892ae2c83c543a80c2b39721aeba8828
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 15:28:11 2010 +0000
+
+    feed-switcher: Add toplevel switcher between feeds
+
+ src/Makefile.am         |    4 +-
+ src/mps-feed-switcher.c |  491 +++++++++++++++++++++++++++++++++++++++++++++++
+ src/mps-feed-switcher.h |   58 ++++++
+ 3 files changed, 552 insertions(+), 1 deletions(-)
+
+commit 71b74ba3ff4c465afa55f7378b64a591fe3f5738
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 15:23:08 2010 +0000
+
+    feed-pane: Place the entry and update button inside an hbox
+
+ src/mps-feed-pane.c |   82 ++++++--------------------------------------------
+ 1 files changed, 10 insertions(+), 72 deletions(-)
+
+commit e741d7f393f06dcd812702370a09b541dbb3e3bd
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 14:49:55 2010 +0000
+
+    feed-pane: Take a reference on the object for the callback
+
+ src/mps-feed-pane.c |    4 +++-
+ 1 files changed, 3 insertions(+), 1 deletions(-)
+
+commit e3033986cfcaf2757fb45efaccc4934312e87745
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 14:49:34 2010 +0000
+
+    view-bridge: Whitespace fixes
+
+ src/mps-view-bridge.c |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit ae74120ad746f1deeffe6ac77d90ad6b27660608
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 14:49:27 2010 +0000
+
+    view-bridge: Unref the view in dispose
+
+ src/mps-view-bridge.c |    6 ++++++
+ 1 files changed, 6 insertions(+), 0 deletions(-)
+
+commit 69d0b0265abd8d555242ae9144d56bd3b7ce39d3
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Feb 2 14:47:52 2010 +0000
+
+    mps-feed-pane: Unref the bridge in dispose
+
+ src/mps-feed-pane.c |    6 ++++++
+ 1 files changed, 6 insertions(+), 0 deletions(-)
+
+commit c02bf2db6bc0c6e61c5803e3a5721090f9ce035b
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Jan 29 11:28:05 2010 +0000
+
+    tweet-card: Enable line wrapping on the main content
+
+ src/mps-tweet-card.c |    5 +++++
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+
+commit cbb96b27a6504abddbfa360768ab57dad0cea37d
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Jan 29 11:24:46 2010 +0000
+
+    build: Remove unused code.
+
+ src/Makefile.am |    2 --
+ 1 files changed, 0 insertions(+), 2 deletions(-)
+
+commit 11a8da50fb571df1dcdb14034a73396787a0a233
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Jan 28 17:21:34 2010 +0000
+
+    Port from Mojito to libsocialweb
+
+ configure.ac              |    2 +-
+ src/moblin-panel-status.c |   18 +++++++-------
+ src/mps-feed-pane.c       |   56 ++++++++++++++++++++++----------------------
+ src/mps-feed-pane.h       |    4 +-
+ src/mps-tweet-card.c      |   16 ++++++------
+ src/mps-tweet-card.h      |    6 ++--
+ src/mps-view-bridge.c     |   38 +++++++++++++++---------------
+ src/mps-view-bridge.h     |    6 ++--
+ 8 files changed, 73 insertions(+), 73 deletions(-)
+
+commit b25f525daee0953a1f2cdd945c3f237cf877c81e
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Jan 28 16:37:49 2010 +0000
+
+    Remove unused source files
+
+ src/Makefile.am            |    2 -
+ src/mnb-im-status-row.c    | 1076 --------------------------------------------
+ src/mnb-im-status-row.h    |   66 ---
+ src/mnb-launcher-button.c  |  253 -----------
+ src/mnb-launcher-button.h  |   61 ---
+ src/mnb-web-status-entry.c |  823 ---------------------------------
+ src/mnb-web-status-row.c   |  818 ---------------------------------
+ src/mojito-online.c        |  264 -----------
+ src/mojito-online.h        |   36 --
+ 9 files changed, 0 insertions(+), 3399 deletions(-)
+
+commit 681a9e709d4c86525ceefbe0e208148c82284259
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Jan 28 15:25:12 2010 +0000
+
+    mps-feed-pane: Add a first version of a pane for a feed
+
+ src/Makefile.am           |    4 +-
+ src/moblin-panel-status.c |   24 +--
+ src/mps-feed-pane.c       |  408 +++++++++++++++++++++++++++++++++++++++++++++
+ src/mps-feed-pane.h       |   59 +++++++
+ 4 files changed, 476 insertions(+), 19 deletions(-)
+
+commit ad3ec5fe6aa8b1cb5bd39aa446b3b2168d479c41
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Jan 27 15:48:14 2010 +0000
+
+    First pass at new status panel implementation
+
+ configure.ac              |    3 +-
+ data/theme/Makefile.am    |    3 +-
+ data/theme/panel.css      |  195 --------
+ src/Makefile.am           |   13 +-
+ src/moblin-panel-status.c | 1133 ++-------------------------------------------
+ src/mps-tweet-card.c      |  226 +++++++++
+ src/mps-tweet-card.h      |   64 +++
+ src/mps-view-bridge.c     |  503 ++++++++++++++++++++
+ src/mps-view-bridge.h     |   67 +++
+ 9 files changed, 902 insertions(+), 1305 deletions(-)
+
+commit 72442cbbba382e629319c416dd8f41b7882ecc35
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Jan 4 11:51:39 2010 +0000
+
+    Significant version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 07e6219fcd969906d1124c044ed864c840cb492b
+Author: Tomas Frydrych <tf@linux.intel.com>
+Date:   Thu Dec 17 08:00:49 2009 +0000
+
+    Post release version bump to 0.0.12
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 0d04975d476bf0d10b92ce35640e1d4fe196eb3e
+Author: Tomas Frydrych <tf@linux.intel.com>
+Date:   Thu Dec 17 08:00:05 2009 +0000
+
+    Generate and install moblin-panel-status.desktop file
+
+ Makefile.am                            |    2 ++
+ configure.ac                           |   14 +++++++++++++-
+ data/Makefile.am                       |   16 ++++++++++++++++
+ data/moblin-panel-status.desktop.in.in |   16 ++++++++++++++++
+ po/POTFILES.in                         |    1 +
+ src/moblin-panel-status.c              |    2 +-
+ 6 files changed, 49 insertions(+), 2 deletions(-)
+
+commit ede48db101d476ebe063cddaab7782c87faf20d1
+Author: Tomas Frydrych <tf@linux.intel.com>
+Date:   Thu Dec 17 07:59:37 2009 +0000
+
+    Fix broken encoding declaration.
+
+ po/tr.po |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 4be4b20a52b5ce7cb7bec0fcc6b884cfc6405392
+Author: margie <margie.foster@intel.com>
+Date:   Thu Dec 3 15:54:15 2009 -0800
+
+    l10n: first pass
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/en_GB.po |  106 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 106 insertions(+), 0 deletions(-)
+
+commit 0ce76a06207fda69e1b8585c9b68960e3533229b
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Nov 17 19:32:52 2009 +0000
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 7a33a897333f94d707b7b7ab7aad01c7776bf974
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Nov 17 13:49:19 2009 +0000
+
+    Switch to autogenerated LINGUAS
+
+ configure.ac     |    4 ++++
+ m4/as-linguas.m4 |   24 ++++++++++++++++++++++++
+ po/LINGUAS       |   12 ------------
+ 3 files changed, 28 insertions(+), 12 deletions(-)
+
+commit db53c606ea2ff2d8dca2566f0770ade2f6c1789b
+Author: itsoftex <yousef@itsoftex.com>
+Date:   Fri Nov 13 14:01:53 2009 -0800
+
+    l10n: Arabic Translation, initial upload
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ar.po |  103 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 103 insertions(+), 0 deletions(-)
+
+commit 36a01e92b97e7ad449d83c087d262a370781c8f4
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Oct 28 16:21:49 2009 +0000
+
+    Update licence headers
+
+ src/mnb-im-status-row.c    |   20 ++++++++++----------
+ src/mnb-im-status-row.h    |   20 ++++++++++----------
+ src/mnb-launcher-button.c  |   20 ++++++++++----------
+ src/mnb-launcher-button.h  |   20 ++++++++++----------
+ src/mnb-web-status-entry.c |   20 ++++++++++----------
+ src/mnb-web-status-entry.h |   20 ++++++++++----------
+ src/mnb-web-status-row.c   |   20 ++++++++++----------
+ src/mnb-web-status-row.h   |   20 ++++++++++----------
+ src/moblin-panel-status.c  |   20 ++++++++++----------
+ src/penge-magic-texture.c  |   20 ++++++++++----------
+ src/penge-magic-texture.h  |   20 ++++++++++----------
+ 11 files changed, 110 insertions(+), 110 deletions(-)
+
+commit 0b060769b04b8a5dff3692a3026534dafca2a0b5
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Oct 21 11:31:56 2009 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit c86870237d38faea0bc75140161ae09f34a88192
+Author: ZhuYanhai <zhu.yanhai@gmail.com>
+Date:   Tue Oct 20 19:44:08 2009 -0700
+
+    l10n: Updates to Chinese (China) (zh_CN) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_CN.po |   50 +++++++++++++++++++++++---------------------------
+ 1 files changed, 23 insertions(+), 27 deletions(-)
+
+commit 4302ee252e851e5cfc14dd112a806e884c7d5a98
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Oct 20 17:19:17 2009 +0100
+
+    moblin-panel-status: Add placeholder launchers for no im/web services
+    
+    This fixes MB#5051.
+
+ src/moblin-panel-status.c |  102 ++++++++++++++++++++++++++++++++++++++++++--
+ 1 files changed, 97 insertions(+), 5 deletions(-)
+
+commit cdb8c8b03c87ead9cd96134894d83faf5684c02d
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Oct 20 17:09:58 2009 +0100
+
+    mnb-launcher-button: Add button to launch placeholder apps
+    
+    This is part of the fix for MB#5051
+
+ data/theme/Makefile.am            |    3 +-
+ data/theme/launcher-button-bg.png |  Bin 0 -> 463 bytes
+ data/theme/panel.css              |   17 +++
+ src/Makefile.am                   |    4 +-
+ src/mnb-launcher-button.c         |  253 +++++++++++++++++++++++++++++++++++++
+ src/mnb-launcher-button.h         |   61 +++++++++
+ 6 files changed, 336 insertions(+), 2 deletions(-)
+
+commit 228b711e403dfcdc6faa9699c229c52d6220f8fa
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Oct 20 16:51:13 2009 +0100
+
+    mnb-im-status-row: Workaround crasher by destroying actors in dispose
+    
+    In finalize the ref count is zero. And thus calling clutter_actor_destroy may
+    lead to a chain of events that causes the parent-set signal to be fired. This
+    takes a reference but this will fail if the object has a zero reference count.
+
+ src/mnb-im-status-row.c |   41 +++++++++++++++++++++++++++++++----------
+ 1 files changed, 31 insertions(+), 10 deletions(-)
+
+commit ffa5abe09fb63c42cc52f816dc381143e58450e9
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Tue Oct 20 15:07:17 2009 +0100
+
+    moblin-panel-status: Switch to being a Clutter/GTK+ hybrid panel
+    
+    This is necessary in order to get a GtkIconTheme for the launcher.
+
+ src/moblin-panel-status.c |   38 +++++++++++++++++++++++++-------------
+ 1 files changed, 25 insertions(+), 13 deletions(-)
+
+commit f0bdf53d265de91ccf64dd31d24c823377686ab8
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Oct 19 18:07:18 2009 +0100
+
+    moblin-panel-status: Switch to use new MojitoOnline API
+
+ src/moblin-panel-status.c |   29 +++++++----------------------
+ 1 files changed, 7 insertions(+), 22 deletions(-)
+
+commit ba39c7dc3289b34c52d790253e803b7a464ee0df
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Oct 19 18:02:53 2009 +0100
+
+    mojito-online: Import mojito-online from Mojito core
+    
+    This means that we no longer require dbus signals from Mojito for details of
+    online/offline state. Which may be delayed by long running HTTP requests in
+    Mojito's core.
+    
+    Ultimately we should push this code into something that can be shared by
+    different components.
+
+ configure.ac        |   30 ++++++
+ src/Makefile.am     |    8 +-
+ src/mojito-online.c |  264 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/mojito-online.h |   36 +++++++
+ 4 files changed, 335 insertions(+), 3 deletions(-)
+
+commit 96a2379a83815433dffeefa1eae5507a749b535d
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Oct 19 18:01:36 2009 +0100
+
+    mnb-status-marshal.list: Add extra marshal needed for connman
+
+ src/mnb-status-marshal.list |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 4accb134c66e9b7c6d99dc95dfbd9850a942696b
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Oct 16 16:47:38 2009 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 93a40a04026a37410936c4f6b0554139e047a8a1
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Oct 15 18:04:15 2009 +0100
+
+    moblin-panel-status: Use the new mnb_im_status_row_set_enabled call
+    
+    When we see enabled/disabled events trigger a refresh of the item using this
+    new state. Taking into consideration if we are online or not.
+
+ src/moblin-panel-status.c |   13 ++++++-------
+ 1 files changed, 6 insertions(+), 7 deletions(-)
+
+commit d3943cd2777d316509bcd838b16f25557af50bed
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Oct 15 18:00:21 2009 +0100
+
+    mnb-im-status-row: Add a _set_enabled function
+    
+    This allows us to ensure that the item is "insensitive" unless the account is
+    enabled and we're online.
+
+ src/mnb-im-status-row.c |   51 +++++++++++++++++++++++++++++++++++++---------
+ src/mnb-im-status-row.h |    2 +
+ 2 files changed, 43 insertions(+), 10 deletions(-)
+
+commit d7039e1bc5b18ef160e9253653632834818bcc6e
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Oct 15 17:16:59 2009 +0100
+
+    moblin-panel-status: Only query the accounts from the AM on startup
+    
+    Rather than query the TpAccountManager for accounts every time we go
+    online/offline only query on startup. This was originally a work around for a
+    bug in MC4 but is no longer necessary with MC5.
+    
+    Fixes: MB#6725
+
+ src/moblin-panel-status.c |   67 ++-------------------------------------------
+ 1 files changed, 3 insertions(+), 64 deletions(-)
+
+commit ffdee5da18e33c755839c7b1207cb2409d1e6ff5
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Oct 15 15:53:15 2009 +0100
+
+    penge-magic-texture: Update to the latest version from Myzone
+
+ src/penge-magic-texture.c |   18 ++++++++++++------
+ 1 files changed, 12 insertions(+), 6 deletions(-)
+
+commit d6b2bfe042f37b4af4eb8571821e6a7cbf9c67eb
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Wed Oct 14 16:22:00 2009 +0100
+
+    Bail out early if Mojito gives us an empty caps string
+    
+    Patch by: Rusty Lynch <rusty.lynch@intel.com>
+    
+    Fixes bug:
+    
+      http://bugzilla.moblin.org/show_bug.cgi?id=5579
+
+ src/moblin-panel-status.c |    7 +++++++
+ 1 files changed, 7 insertions(+), 0 deletions(-)
+
+commit 7c09e4e588688dadb57571b7eb89dbfe1343c049
+Author: GLS_CHS <yunx.nie@intel.com>
+Date:   Sat Oct 10 01:37:55 2009 +0000
+
+    l10n: Updates to Chinese (China) (zh_CN) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_CN.po |   63 ++++++++++++++++++++++++++--------------------------------
+ 1 files changed, 28 insertions(+), 35 deletions(-)
+
+commit 5aa79f42d29eca40b070f338f72bb7da8d683ffd
+Author: Hylke Bons <hylke.bons@intel.com>
+Date:   Thu Oct 8 12:39:21 2009 +0100
+
+    Remove hidden file.
+
+ data/theme/panel.css~ |  175 -------------------------------------------------
+ 1 files changed, 0 insertions(+), 175 deletions(-)
+
+commit 4593fe7a4f3f1fb3c1011ae86cd4c8490d2046f3
+Author: Hylke Bons <hylke.bons@intel.com>
+Date:   Thu Oct 8 12:02:55 2009 +0100
+
+    Droid Sans everywhere.
+
+ data/theme/panel.css  |    3 +
+ data/theme/panel.css~ |  175 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 178 insertions(+), 0 deletions(-)
+
+commit a072503d61a4569a84b083c56c2fe5ddeba4794d
+Author: ZhuYanhai <zhu.yanhai@gmail.com>
+Date:   Sun Oct 4 07:34:06 2009 +0000
+
+    l10n: Initial import Oriya PO.
+    (This is a dummy PO file, for debug purpose only)
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/or.po |   93 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 93 insertions(+), 0 deletions(-)
+
+commit c0b4126a6cdb12984a67e8d33c74cf6bd938d2de
+Author: ZhuYanhai <zhu.yanhai@gmail.com>
+Date:   Sat Oct 3 11:56:06 2009 +0000
+
+    l10n: inital import Occitan PO file.
+    (This is a dummy PO, for debug purpose only)
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/oc.po |   93 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 93 insertions(+), 0 deletions(-)
+
+commit a96ceabae6bc01e2f456ebf88d2fa1df63c9ec28
+Author: milo <milo@ubuntu.com>
+Date:   Fri Oct 2 21:09:07 2009 +0000
+
+    l10n: Updates to Italian (it) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/it.po |   48 ++++++++++++++++++++++++------------------------
+ 1 files changed, 24 insertions(+), 24 deletions(-)
+
+commit 203433dfdd665f9912256b66dab7126f4c4af3fa
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Oct 2 16:29:23 2009 +0100
+
+    Post-release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 096f55096f678aa8640588d0b1eccc57eec00012
+Author: Jonny Lamb <jonny.lamb@collabora.co.uk>
+Date:   Wed Sep 30 14:51:55 2009 +0100
+
+    moblin-panel-status: wait for new accounts to become ready after account-enabled
+    
+    Signed-off-by: Jonny Lamb <jonny.lamb@collabora.co.uk>
+
+ src/moblin-panel-status.c |   19 ++++++++++++++++---
+ 1 files changed, 16 insertions(+), 3 deletions(-)
+
+commit 21b33c1988e08ad11e934c116ff3ddce3f8032b0
+Author: Jonny Lamb <jonny.lamb@collabora.co.uk>
+Date:   Wed Sep 30 14:47:37 2009 +0100
+
+    moblin-panel-status: set the MnbImStatusRow online status of newly created accounts
+    
+    Signed-off-by: Jonny Lamb <jonny.lamb@collabora.co.uk>
+
+ src/moblin-panel-status.c |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+commit b79ca2256098297b5ee2c31e28abd9e3a34028c3
+Author: zerng07 <pswo10680@gmail.com>
+Date:   Fri Oct 2 01:00:53 2009 +0000
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   36 ++++++++++++++++++------------------
+ 1 files changed, 18 insertions(+), 18 deletions(-)
+
+commit 1931ebd102b01e7eb3ed3fe6b8ae354a88160fa1
+Author: zerng07 <pswo10680@gmail.com>
+Date:   Wed Sep 30 16:21:32 2009 +0000
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   42 +++++++++++++++++-------------------------
+ 1 files changed, 17 insertions(+), 25 deletions(-)
+
+commit 779c89479d8b8b7cd1798e5ac1c5db7f502da15c
+Author: Jonny Lamb <jonny.lamb@collabora.co.uk>
+Date:   Wed Sep 30 14:22:39 2009 +0100
+
+    moblin-panel-status: connect to account-removed and remove the account when emitted
+    
+    Signed-off-by: Jonny Lamb <jonny.lamb@collabora.co.uk>
+
+ src/moblin-panel-status.c |   38 ++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 38 insertions(+), 0 deletions(-)
+
+commit 151893a676652277660f87f60de9645bde876f50
+Author: Jonny Lamb <jonny.lamb@collabora.co.uk>
+Date:   Wed Sep 30 14:22:25 2009 +0100
+
+    mnb-im-status-row: keep a ref to the TpAccount in question
+    
+    Signed-off-by: Jonny Lamb <jonny.lamb@collabora.co.uk>
+
+ src/mnb-im-status-row.c |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit e77df7e9e162c645d4d66237ca7993cd786ef613
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Wed Sep 30 09:49:40 2009 +0100
+
+    Post-release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 419ffd4e56794e2b5ab068586d55419b7a808356
+Author: Jonny Lamb <jonny.lamb@collabora.co.uk>
+Date:   Mon Sep 28 15:35:49 2009 +0100
+
+    configure.ac: add a versioned depends on telepathy-glib
+    
+    Signed-off-by: Jonny Lamb <jonny.lamb@collabora.co.uk>
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 937414d951216d1bb5399ef33d9777f66c09869a
+Author: Jonny Lamb <jonny.lamb@collabora.co.uk>
+Date:   Sat Sep 26 17:03:59 2009 +0100
+
+    moblin-panel-status: update to use new tp-glib account helper API
+    
+    Signed-off-by: Jonny Lamb <jonny.lamb@collabora.co.uk>
+
+ src/moblin-panel-status.c |  285 ++++++++++++++++++++-------------------------
+ 1 files changed, 126 insertions(+), 159 deletions(-)
+
+commit 422dd0ab585fed35760751079293f985ac602b7a
+Author: Jonny Lamb <jonny.lamb@collabora.co.uk>
+Date:   Sat Sep 26 17:00:46 2009 +0100
+
+    mnb-im-status-row: update to use new telepathy-glib account helper API
+    
+    Signed-off-by: Jonny Lamb <jonny.lamb@collabora.co.uk>
+
+ src/mnb-im-status-row.c     |  150 ++++++++++++++++++++++++++++---------------
+ src/mnb-status-marshal.list |    2 +-
+ 2 files changed, 99 insertions(+), 53 deletions(-)
+
+commit 48450fd1db8689547bb3516c1251217f74c6f057
+Author: Jonny Lamb <jonny.lamb@collabora.co.uk>
+Date:   Sat Sep 26 17:00:04 2009 +0100
+
+    Build with clutter-gtk and telepathy-glib.
+    
+    Signed-off-by: Jonny Lamb <jonny.lamb@collabora.co.uk>
+
+ configure.ac |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+commit 2b1c1664db3dfa4747561d675c364c96bea9fc7a
+Author: tuz <tuzr@yandex.ru>
+Date:   Tue Sep 22 12:43:47 2009 +0000
+
+    l10n: Ukrainian translation (new).
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/uk.po |   94 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 94 insertions(+), 0 deletions(-)
+
+commit 041f2133d83927df17b941162fd396aa0475ad1c
+Author: GLS_CHS <yunx.nie@intel.com>
+Date:   Sat Sep 19 00:18:10 2009 +0000
+
+    l10n: Updates to Chinese (China) (zh_CN) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_CN.po |   55 +++++++++++++++++++++++++++++++++----------------------
+ 1 files changed, 33 insertions(+), 22 deletions(-)
+
+commit d594d2772f8e827366ed5051bc004c936f5b487c
+Author: zerng07 <pswo10680@gmail.com>
+Date:   Fri Sep 18 18:23:59 2009 +0000
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   56 ++++++++++++++++++++++++++++----------------------------
+ 1 files changed, 28 insertions(+), 28 deletions(-)
+
+commit 4d777c8a675d21ae15d1b401e53f13fcba8e3613
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Thu Sep 17 15:30:45 2009 +0100
+
+    Post release version bump
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 3c7a9e62acd60243d31d02649e194bda8e9c2129
+Author: Neil Roberts <neil@linux.intel.com>
+Date:   Mon Sep 7 17:13:43 2009 +0100
+
+    Use nbtk_utils_format_time instead of mpl_utils_format_time
+    
+    The function has moved from libmoblin-panel to NBTK.
+
+ src/mnb-web-status-entry.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit cde6ba81ef7e57974731adaa49228724d9ed7323
+Author: Thomas Wood <thomas.wood@intel.com>
+Date:   Tue Sep 15 14:13:38 2009 +0100
+
+    Update for API changes in nbtk-1.2
+
+ configure.ac              |    2 +-
+ src/moblin-panel-status.c |    8 ++++----
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 3a51ed7db5028a5e8d6659d5c0539bc952c6f550
+Author: elloxar <elloxar@gmail.com>
+Date:   Mon Sep 14 11:12:33 2009 +0000
+
+    l10n: Updates to Romanian (ro) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ro.po |   14 +++++++-------
+ 1 files changed, 7 insertions(+), 7 deletions(-)
+
+commit 5e41faec7142de29aac524cb26135a6ad356ffc6
+Author: tomasgalicia <tomas.galicia@intel.com>
+Date:   Wed Sep 9 03:13:25 2009 +0000
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   54 ++++++++++++++++++++++++++++++++----------------------
+ 1 files changed, 32 insertions(+), 22 deletions(-)
+
+commit 6d0f8bd61a924f1603b069826f7f1e382ad6d3e2
+Author: Robert Staudinger <robsta@gnome.org>
+Date:   Tue Sep 8 12:36:47 2009 +0200
+
+    Fix build.
+    
+    The stdlib.h macros for returning exit state were used in main() but
+    the header was not included.
+
+ src/moblin-panel-status.c |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 84b3197efe5bc958d7fe7d1f8fcf6733f66dd73b
+Author: Gary Lin <glin@novell.com>
+Date:   Fri Sep 4 01:31:06 2009 +0000
+
+    l10n: Updates to Chinese (Taiwan) (zh_TW) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_TW.po |   49 +++++++++++++++++++++++--------------------------
+ 1 files changed, 23 insertions(+), 26 deletions(-)
+
+commit a6df439390958d2cb92652cb16a40c3a28cc58ea
+Author: aalam <apreet.alam@gmail.com>
+Date:   Fri Sep 4 01:12:46 2009 +0000
+
+    l10n: Punjabi Translation Added
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/pa.po |  101 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 101 insertions(+), 0 deletions(-)
+
+commit 42d3999696109d933580a3089dae0283541e2221
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Thu Sep 3 17:20:12 2009 +0100
+
+    Post-release version bump to 0.0.5
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 49c3334c30f90ca3891d33970c1f95eabe9a8918
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Thu Sep 3 17:15:43 2009 +0100
+
+    Bump up mojito requirement
+    
+    Mojito was finally fixed to use three numbers for its version, so we
+    can go back on depending to 0.x.y.
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 1fee6e42b3431e819287ce07f8d4c95822fd0b5c
+Author: m8t <mmassonnet@gmail.com>
+Date:   Tue Sep 1 00:38:42 2009 +0000
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/fr.po |   37 +++++++++++++++----------------------
+ 1 files changed, 15 insertions(+), 22 deletions(-)
+
+commit b805a3d6c8a6a27bb882777d016f78a9bb558175
+Author: elloxar <elloxar@gmail.com>
+Date:   Sun Aug 30 01:31:21 2009 +0000
+
+    l10n: Romanian Translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ro.po |  104 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 104 insertions(+), 0 deletions(-)
+
+commit 4af70036428039f7943b43e72310421ec144401e
+Author: ZhuYanhai <zhu.yanhai@gmail.com>
+Date:   Fri Aug 28 05:38:08 2009 +0000
+
+    l10n: Updates to Chinese (China) (zh_CN) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/zh_CN.po |   30 +++++++++++++-----------------
+ 1 files changed, 13 insertions(+), 17 deletions(-)
+
+commit 3dd96a0b1d3bfa321b1a1e747da676d5d2d223cb
+Author: andika <andika@gmail.com>
+Date:   Mon Aug 24 13:25:47 2009 +0000
+
+    Indonesian translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/id.po |   95 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 95 insertions(+), 0 deletions(-)
+
+commit 27e63dd8b8a6b4fd6a87e827a7d0cb04352fc803
+Author: anoochit <anoochit@gmail.com>
+Date:   Fri Aug 21 09:35:43 2009 +0000
+
+    Updates to Thai (th) translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/th.po |   42 +++++++++++++++++-------------------------
+ 1 files changed, 17 insertions(+), 25 deletions(-)
+
+commit 1621f52d54eb8990f797d6aefcdeb1ed612d3533
+Author: mhangman <ceyhunalyesil@gmail.com>
+Date:   Thu Aug 20 00:04:57 2009 +0000
+
+    turkish translation by ceyhun alyesil
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/tr.po |   95 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 95 insertions(+), 0 deletions(-)
+
+commit 7dbd00b67427121e213533535af9603c7d50e18e
+Author: jeen <gentoo@list.ru>
+Date:   Wed Aug 19 11:13:45 2009 +0000
+
+    Russian translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/ru.po |   97 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 97 insertions(+), 0 deletions(-)
+
+commit f6c66df4e1a2f318e2b7bf003e970f23687af816
+Author: anoochit <anoochit@gmail.com>
+Date:   Fri Aug 14 13:56:58 2009 +0000
+
+    Updates to Thai translation
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/th.po |  103 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 103 insertions(+), 0 deletions(-)
+
+commit ede84bc69279dfacbfd73403939a88278bf97117
+Author: Ross Burton <ross@linux.intel.com>
+Date:   Wed Aug 12 12:17:28 2009 +0100
+
+    Post-release version bump to 0.0.4
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 0c3922ebed47f3a1df3b37e7ee2ae54cb82cb30f
+Author: Ross Burton <ross@linux.intel.com>
+Date:   Wed Aug 12 12:16:43 2009 +0100
+
+    Fix mojito version check
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 64cb19868b3170d456e5acd6aab9966cefacec7c
+Author: auke <auke-jan.h.kok@intel.com>
+Date:   Tue Aug 11 17:53:10 2009 +0000
+
+    Dutch
+    
+    Transmitted-via: Transifex (translate.moblin.org)
+
+ po/nl.po |  100 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 100 insertions(+), 0 deletions(-)
+
+commit 8f964b4a0bb73960d05ea3b62fc373c10ba2b2a8
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Tue Aug 11 15:51:52 2009 +0100
+
+    Post-release version bump to 0.0.3
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 38b1b3dcffc415c8440dfbbd27e79de27661dff0
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Tue Aug 11 15:48:14 2009 +0100
+
+    [release] 0.0.2
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 41006d16a6586c8e2b2bb94bd8adc6415b5d07c6
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Tue Aug 11 15:47:15 2009 +0100
+
+    [build] Generate the ChangeLog on dist
+
+ Makefile.am |   14 +++++++++++++-
+ 1 files changed, 13 insertions(+), 1 deletions(-)
+
+commit 4e546a316196de5e8aee92cdb28f20d87c7ff5cc
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Tue Aug 11 15:43:36 2009 +0100
+
+    Update the NEWS
+
+ NEWS |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+commit 48e3e91ad84bf7483b7cdd0ef90dce2553a0bea5
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Tue Aug 11 15:43:29 2009 +0100
+
+    Update the README
+
+ README |   19 +++++++++++++++++++
+ 1 files changed, 19 insertions(+), 0 deletions(-)
+
+commit 80ee69ae9a1ed93d1ca04abcd442e6bec449d1b3
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Tue Aug 11 15:43:18 2009 +0100
+
+    The status panel is licensed under the LGPLv2.1
+
+ COPYING |  674 +++++++++++++++++++++++++++++++++++++++------------------------
+ 1 files changed, 422 insertions(+), 252 deletions(-)
+
+commit 5060e362666cc60ce3daf84d68cf2b47aa37b014
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Tue Aug 11 15:39:26 2009 +0100
+
+    [build] Depend on mojito >= 0.20.0
+
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 62c8d0f129579e90440395f63c339cce06996fea
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Tue Aug 11 14:46:33 2009 +0100
+
+    Update the Web status after Mojito changes
+
+ src/mnb-web-status-entry.c |   13 ++++++-
+ src/mnb-web-status-entry.h |    7 ++--
+ src/mnb-web-status-row.c   |   86 ++++++++++++++++++++++---------------------
+ 3 files changed, 59 insertions(+), 47 deletions(-)
+
+commit 3d7c9f59ea7524ba3f45b51a0bc377d6249ae2ec
+Author: Emmanuele Bassi <ebassi@gnome.org>
+Date:   Tue Aug 11 14:46:06 2009 +0100
+
+    [build] Update the configure
+
+ configure.ac |   52 ++++++++++++++++++++++++++++------------------------
+ 1 files changed, 28 insertions(+), 24 deletions(-)
+
+commit fb10eaf16bbd064c12587ec8c734abe72a9841d3
+Author: Auke Kok <auke-jan.h.kok@intel.com>
+Date:   Mon Aug 10 14:55:41 2009 -0700
+
+    Scrubbing translations
+
+ po/de.po    |  474 +++++----------------------------------------------------
+ po/es.po    |  491 +++++------------------------------------------------------
+ po/fi.po    |  464 ++++---------------------------------------------------
+ po/fr.po    |  476 +++++----------------------------------------------------
+ po/hu.po    |  431 ++++------------------------------------------------
+ po/it.po    |  463 +++++---------------------------------------------------
+ po/ja.po    |  462 ++++---------------------------------------------------
+ po/ko.po    |  461 ++++---------------------------------------------------
+ po/pl.po    |  483 ++++------------------------------------------------------
+ po/pt_BR.po |  462 +++++---------------------------------------------------
+ po/sv.po    |  458 ++++---------------------------------------------------
+ po/zh_CN.po |  447 +++--------------------------------------------------
+ po/zh_TW.po |  456 ++++---------------------------------------------------
+ 13 files changed, 421 insertions(+), 5607 deletions(-)
+
+commit 350d91d0d6f5837aa2a97205f2921404d9fc1666
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Aug 10 12:35:23 2009 +0100
+
+    Update POTFILES
+
+ po/POTFILES.in |   42 ++++--------------------------------------
+ 1 files changed, 4 insertions(+), 38 deletions(-)
+
+commit c99eb8a46be9310758c18dce2f458c769ea0f324
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Mon Aug 10 11:09:00 2009 +0100
+
+    Refresh COPYING file.
+
+ COPYING |  340 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 340 insertions(+), 0 deletions(-)
+
+commit f65b6bbde4c088395a5f62bc1431f18a79e44b74
+Author: Rob Bradford <rob@linux.intel.com>
+Date:   Fri Aug 7 15:14:46 2009 +0100
+
+    Initial import from mutter-moblin
+
+ .gitignore                                       |   41 +
+ INSTALL                                          |  291 +++++
+ Makefile.am                                      |    1 +
+ autogen.sh                                       |   22 +
+ configure.ac                                     |   54 +
+ data/Makefile.am                                 |    1 +
+ data/theme/Makefile.am                           |   33 +
+ data/theme/avatar-bg.png                         |  Bin 0 -> 651 bytes
+ data/theme/decoration-frame.png                  |  Bin 0 -> 3163 bytes
+ data/theme/edit_close.png                        |  Bin 0 -> 2977 bytes
+ data/theme/edit_close_hover.png                  |  Bin 0 -> 3269 bytes
+ data/theme/entry-frame-edit.png                  |  Bin 0 -> 467 bytes
+ data/theme/entry-frame-hover.png                 |  Bin 0 -> 489 bytes
+ data/theme/im-available.png                      |  Bin 0 -> 577 bytes
+ data/theme/im-away.png                           |  Bin 0 -> 666 bytes
+ data/theme/im-busy.png                           |  Bin 0 -> 597 bytes
+ data/theme/im-offline.png                        |  Bin 0 -> 639 bytes
+ data/theme/minus-button-hover.png                |  Bin 0 -> 503 bytes
+ data/theme/minus-button.png                      |  Bin 0 -> 437 bytes
+ data/theme/no_image_icon.png                     |  Bin 0 -> 554 bytes
+ data/theme/panel.css                             |  175 +++
+ data/theme/placeholder-bg.png                    |  Bin 0 -> 151 bytes
+ data/theme/plus-button-hover.png                 |  Bin 0 -> 567 bytes
+ data/theme/plus-button.png                       |  Bin 0 -> 518 bytes
+ po/LINGUAS                                       |   12 +
+ po/POTFILES.in                                   |   39 +
+ po/de.po                                         |  498 +++++++++
+ po/es.po                                         |  522 +++++++++
+ po/fi.po                                         |  491 +++++++++
+ po/fr.po                                         |  500 +++++++++
+ po/hu.po                                         |  468 +++++++++
+ po/it.po                                         |  490 +++++++++
+ po/ja.po                                         |  488 +++++++++
+ po/ko.po                                         |  488 +++++++++
+ po/pl.po                                         |  535 ++++++++++
+ po/pt_BR.po                                      |  487 +++++++++
+ po/sv.po                                         |  488 +++++++++
+ po/zh_CN.po                                      |  493 +++++++++
+ po/zh_TW.po                                      |  486 +++++++++
+ src/Makefile.am                                  |   59 +
+ src/mnb-im-status-row.c                          |  978 +++++++++++++++++
+ src/mnb-im-status-row.h                          |   64 ++
+ src/mnb-status-marshal.list                      |    3 +
+ src/mnb-web-status-entry.c                       |  814 ++++++++++++++
+ src/mnb-web-status-entry.h                       |   75 ++
+ src/mnb-web-status-row.c                         |  816 +++++++++++++++
+ src/mnb-web-status-row.h                         |   58 +
+ src/moblin-panel-status.c                        | 1222 ++++++++++++++++++++++
+ src/org.moblin.UX.Shell.Panels.status.service.in |    4 +
+ src/penge-magic-texture.c                        |   87 ++
+ src/penge-magic-texture.h                        |   59 +
+ 51 files changed, 11342 insertions(+), 0 deletions(-)

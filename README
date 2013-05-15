@@ -1,0 +1,9 @@
+meego-panel-status: The Status panel for MeeGo
+
+The meego-panel-status provides the Status panel for the MeeGo shell. Inside
+the Status panel you can see and edit your status for Web services
+
+Copyright (C) 2010 Intel Corporation
+
+Licensed under the terms of the GNU Lesser General Public Library
+version 2.1
