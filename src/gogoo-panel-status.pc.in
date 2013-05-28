@@ -1,0 +1,14 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=@CMAKE_INSTALL_PREFIX@/bin
+libdir=@PKG_LIBDIR@
+includedir=@PKG_INCLUDEDIR@/libsocialweb
+datadir=@PKG_DATADIR@
+servicesdir=@SERVICES_DIR@
+servicesdatadir=@SERVICES_DATADIR@
+
+Name: meego-panel-status
+Description: Plugin for gogoo-panel-status
+Version: @VERSION@
+Cflags: -I@PKG_INCLUDEDIR@
+Libs: -L@PKG_LIBDIR@ -loma-panel-status
+Requires: mx-1.0 libsocialweb-client

@@ -1,0 +1,69 @@
+dir /usr
+dir /usr/include
+dir /usr/include/meego-panel-status
+obj /usr/include/meego-panel-status/penge-magic-texture.h 9a17196048eb05c100813af4b3b34181 1368618947
+obj /usr/include/meego-panel-status/mps-feed-pane.h 303a69225d79cde683d3164b3fe040a6 1368618947
+obj /usr/include/meego-panel-status/mps-module.h 0f1d3ef6174240bcffec6e3c551de292 1368618947
+obj /usr/include/meego-panel-status/mps-feed-switcher.h cb2c920ce5f309da9ab7199e9ae2ef93 1368618947
+obj /usr/include/meego-panel-status/mps-geotag-pane.h f9ec7900e3d5793e3b4c31f8bf255785 1368618947
+obj /usr/include/meego-panel-status/mps-view-bridge.h 8f67a58730a1e5e7885f5ccd1f2016e0 1368618947
+obj /usr/include/meego-panel-status/penge-clickable-label.h c2a0206ab08fc259b1cd8c5f43f06d14 1368618947
+obj /usr/include/meego-panel-status/sw-online.h aab1dd57e93f3d1daba3ca4d3ba0e34e 1368618947
+obj /usr/include/meego-panel-status/mps-tweet-card.h 4a7b0e8911effe4b8245f61f9e165888 1368618947
+dir /usr/libexec
+obj /usr/libexec/meego-panel-status 99975e978cce10d46b6cb22ce7cbb7d1 1368618948
+dir /usr/share
+dir /usr/share/meego-panel-status
+dir /usr/share/meego-panel-status/theme
+obj /usr/share/meego-panel-status/theme/status_card_background.png d2d2d0d5196a4d528b67eb31fa9b019d 1368618947
+obj /usr/share/meego-panel-status/theme/retweet-hover.png 12ec6c760132a1c27458a48bce909fb8 1368618947
+obj /usr/share/meego-panel-status/theme/content-panel-header-grey.png 59c7c0aa1687715ba7133ec52bdd735a 1368618947
+obj /usr/share/meego-panel-status/theme/current_status_header.png 355b767f502394b960701094a34567eb 1368618947
+obj /usr/share/meego-panel-status/theme/alt_status_header.png 7d3ff5c82d9508478ad68d0d9ea1f706 1368618947
+obj /usr/share/meego-panel-status/theme/alt_status_header_hover.png b71efeccb886b93107e87207ecfbaad0 1368618947
+obj /usr/share/meego-panel-status/theme/location-box-bg.png 2bf1c3650fbb761ff0d354a151d95a32 1368618947
+obj /usr/share/meego-panel-status/theme/tweet-reply.png 59d455bd3e2b694a3074535275ab06fb 1368618947
+obj /usr/share/meego-panel-status/theme/add_status_header.png 4bf37bd39cdb5098597856f7827d1990 1368618947
+obj /usr/share/meego-panel-status/theme/panel-background.png 8ed79e1b79b5691e72cfeed3e1a588cb 1368618947
+obj /usr/share/meego-panel-status/theme/avatar_icon.png 45ea764e770298342783e1fa642e8b1c 1368618947
+obj /usr/share/meego-panel-status/theme/icon-bg-hover.png 285db2155b75f5fc488f868ce78904cd 1368618947
+obj /usr/share/meego-panel-status/theme/panel.css e1594a5bd2f9ad523828d091f2d9168f 1368618947
+obj /usr/share/meego-panel-status/theme/avatar_frame.png 219ff208f65acf94557737654692a2cd 1368618947
+obj /usr/share/meego-panel-status/theme/retweet.png 9c2cea0781c3b6abb4d727683b7951da 1368618947
+obj /usr/share/meego-panel-status/theme/background-gradient.png 5b2e3f4aeba04f5fceea1162e3f52c9f 1368618947
+obj /usr/share/meego-panel-status/theme/status_header_hover.png f8041821e86424da843f42952ad42a3c 1368618947
+obj /usr/share/meego-panel-status/theme/tweet-reply-hover.png 162af5d2ba1caaab4ad838ac436451f4 1368618947
+obj /usr/share/meego-panel-status/theme/people.png ea823d2b4ede4a17f1cff8891f4fa91b 1368618947
+obj /usr/share/meego-panel-status/theme/add_status_header_hover.png 9f297daf045df10caea5a41269e92bc4 1368618947
+obj /usr/share/meego-panel-status/theme/status_entry_box.png 8f04cfead199beaaf08df91c97fd7305 1368618947
+obj /usr/share/meego-panel-status/theme/content-panel-background.png bf643e7cc42931993821876850bfcf32 1368618947
+dir /usr/share/locale
+dir /usr/share/locale/ru
+dir /usr/share/locale/ru/LC_MESSAGES
+obj /usr/share/locale/ru/LC_MESSAGES/meego-panel-status.mo 2a23ac92f12786802482e11ed53c8308 1368618947
+dir /usr/share/mutter-netbook
+dir /usr/share/mutter-netbook/panels
+obj /usr/share/mutter-netbook/panels/meego-panel-status.desktop 7799dd4a20ccf7c6deb2197400af4ea8 1368618947
+dir /usr/share/dbus-1
+dir /usr/share/dbus-1/services
+obj /usr/share/dbus-1/services/com.meego.UX.Shell.Panels.status.service 2fb9399b10d417fdaeed2f86c42fa7ec 1368618947
+dir /usr/share/doc
+dir /usr/share/doc/gogoo-panel-status-0.3.4
+obj /usr/share/doc/gogoo-panel-status-0.3.4/ChangeLog.bz2 ec8f6fbeb727e51832a054b95aec4954 1368618947
+obj /usr/share/doc/gogoo-panel-status-0.3.4/README.bz2 0ca781cc281bec4d5de4511bbb0601b5 1368618947
+obj /usr/share/doc/gogoo-panel-status-0.3.4/NEWS.bz2 757405748748bdfd55bc412d077bdf4b 1368618947
+dir /usr/lib64
+obj /usr/lib64/libmeego-panel-status.so.0.0.0 4d18dde47de81213874737dbb673435c 1368618948
+sym /usr/lib64/libmeego-panel-status.so.0 -> libmeego-panel-status.so.0.0.0 1368618953
+sym /usr/lib64/libmeego-panel-status.so -> libmeego-panel-status.so.0.0.0 1368618953
+obj /usr/lib64/libmeego-panel-status.la 9afbb103c77b691f212f3bc1c6926b12 1368618947
+dir /usr/lib64/pkgconfig
+obj /usr/lib64/pkgconfig/meego-panel-status.pc bcbba7ce31f719d4ac10ee6722388deb 1368618947
+obj /usr/lib64/libmeego-panel-status.a 48ec2cc778da31e99e2faba8dfcaa0bd 1368618948
+dir /usr/lib
+dir /usr/lib/debug
+dir /usr/lib/debug/usr
+dir /usr/lib/debug/usr/libexec
+obj /usr/lib/debug/usr/libexec/meego-panel-status.debug 8155474b75c2d619a272716fcf34d54f 1368618948
+dir /usr/lib/debug/usr/lib64
+obj /usr/lib/debug/usr/lib64/libmeego-panel-status.so.0.0.0.debug 94677d170704cd972b37cd3268f039c4 1368618948
