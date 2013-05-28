@@ -101,7 +101,7 @@ CONFIGURE_FILE(
   "${CMAKE_CURRENT_SOURCE_DIR}/com.meego.UX.Shell.Panels.status.service.in"
   "${CMAKE_CURRENT_BINARY_DIR}/com.meego.UX.Shell.Panels.status.service"
   IMMEDIATE @ONLY)
-INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/com.meego.UX.Shell.Panels.zones.service DESTINATION share/dbus-1/services)
+INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/com.meego.UX.Shell.Panels.status.service DESTINATION share/dbus-1/services)
 
 ########### Add .pc target ###############
 CONFIGURE_FILE(
